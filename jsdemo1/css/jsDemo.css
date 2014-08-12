@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+body{ width: 99%;   font-size: 12px; font-family: 宋体,Arial;}
+ul,li{list-style: none;}
+
+
+#menuA{width: 984px; height: 40px; margin: 0px auto;  background-color: #ddd; border-bottom: 1px solid #cbcbcb; }
+#menuA li{ width: 210px; height: auto;  }
+.menuLi a{ text-decoration: none; font-size: 12px; }
+.menuLi{ float: left; height: 32px; position: relative;}
+.menuTitle{ height: 12px; padding: 10px;  border-radius: 4px 4px 0 0;color: #666; display: block; }
+.submenuA{border-bottom: 1px solid #e5e5e5;}
+.submenu{ width: 100%; height: auto; line-height: 32px; background-color: #fff; box-shadow: 3px 3px 10px 0px #ccc;}
+.submenu li{ width: 210px; height:32px; }
+.submenu a{ background-color: #fff; color: #666; padding: 8px;}

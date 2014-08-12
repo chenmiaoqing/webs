@@ -1,0 +1,8 @@
+*{margin: 0; padding: 0;}
+body{ width: 99%;  text-align: center; font:12px/1.62 Helvetica,Arial,sans-serif; background-color:#efefef; }
+ul,li{list-style: none; text-align: left;}
+img{border: 0;}
+a{ text-decoration: none; text-align: left;}
+h2{ font: 15px/150% Arial,Helvetica,sans-serif;
+color: #072;
+margin: 0px 0px 12px;}
