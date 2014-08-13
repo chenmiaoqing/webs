@@ -1,0 +1,5 @@
+*{margin: 0; padding: 0;}
+body{ width:100%;background-color: #bee1f5; font: 12px/1.125 Arial,Helvetica,sans-serif; background-image: url("images/reg_repeat_bg.png"); background-repeat: repeat-x;}
+ul,li{list-style: none; text-align: left;}
+img{border: 0;}
+a{ text-decoration: none; text-align: left;}
