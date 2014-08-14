@@ -14,23 +14,41 @@
 .content1S{color:#E44443;}
 .content1S a{ color: #0a8cd2;}
 .content1S a:hover{ text-decoration: underline;}
+.show{ display: block; width: 600px; height: 250px;}
 .InfoList{display:inline-block; margin-bottom: 15px; }
 .tit{float: left; width: 160px; float: left;line-height: 30px; text-align: right; font-size: 14px;}
 .tit span{ display: inline-block;width: 20px; height: 23px; background-image: url("images/reg_method_s.png");vertical-align: middle;margin-right: 9px;}
 .tit i{font-size: 12px; color: #f00; font-family: "SimSun"; padding-right: 4px; font-style: normal;}
-.input{float: left; display: block;}
-.InfoList input{ float: left; display: block; width: 200px; font-size: 14px; border: 1px solid #ccc; border-radius: 2px; height: 28px; padding: 0 0 0 2px; vertical-align: middle;color: #808080;box-shadow: 0px 1px 1px 0px #eaeaea inset;}
+.input{margin-left: 5px; float: left; display: block;}
+.InfoList input{  float: left; display: block; width: 200px; font-size: 14px; border: 1px solid #ccc; border-radius: 2px; height: 28px; padding: 0 0 0 2px; vertical-align: middle;color: #808080;box-shadow: 0px 1px 1px 0px #eaeaea inset;}
+..InfoList select{ float: left; display: block; width: 61px; height: 17px; border: 1px solid #ccc;margin: 2px 2px 2px 2px ;}
 .input p{ float: left; display: block; padding: 0 0 0 20px; color: #e64141;max-width: 200px; height: auto;}
 .input span{vertical-align: middle; display:inline-block; ; width: 16px; height: 29px;line-height: 22px; background-image: url("images/ico_warn.png"); margin-right: 3px;float: left;}
-#error span{ background-position: 0 -50px; }
-#error{ display: none;}
-#notice{ display: none; background-position: 0 -200px; color: #ccc;}
+.input .error span{ background-position: 0 -50px; }
+.input .error{ display: none;}
+.input .notice { display: none; }
+.input .notice span{ background-position: 0 -200px; color: #ccc;}
+
+.mobile span{ background-position: 0 -23px;}
+.input .jihuoma{ width: 62px; height: 28px; }
+
+#submitS{ margin: 0 5px 0 0; float: left; background-color: #FFA00A;width: 120px; height: 26px;   border: 1px solid #ff9b01; border-radius: 2px; }
+#submitS em{font-style: normal;padding: 4px; display:block;color: #fff;font-size: 10px;}
+#submitS  a{width: 118px; height: 24px; display: block;border: 1px solid #ffb33b; font-size: 12px;}
+
+
+.hide{display: none;width: 600px; height: 150px;}
+
+#Images{ background-image: url("images/pincode (1).jpg"); display: block; width: 108px; height:40px;}
+
+
+
 .attachment{position: relative; margin-top: 40px; display: block;}
 .attachment a{position: absolute; left: 58px; top: 0px; color: #0a8cd2; display:inline-block; }
 .attachment a:hover{ text-decoration: underline;}
 #yanzheng{ width: 74px; height: 30px;}
 .InfoList a{float: left; display: block;width: 120px; height: 15px;}
-.btn{float: left; display: block; line-height: 30px;}
+.btn{float: left; display: block; line-height: 30px; margin-left: 20px; cursor: pointer;}
 
 
 

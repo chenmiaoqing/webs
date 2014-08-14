@@ -2,6 +2,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" scr="js/jquery.city.select.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
@@ -16,9 +17,9 @@
 		<div class="mainlogin">
 			<div class="login">
 				<div class="title">
-				<a href="#">个人注册</a>
+				<a href="#" class="person">个人注册</a>
 				<span>|</span>
-				<a href="#">官方注册</a>
+				<a href="#" class="public">官方注册</a>
 				</div>
 				<div class="Content">
 					<div class="Left">
@@ -26,6 +27,7 @@
 							<li>官方认证类型包括：政府、企业、媒体、网站、应用、机构、公益、淘宝个人卖家、校园组织</li>
 							<li class="content1S">注意：非官方类用户，请直接在<a href="#">个人注册</a>处注册</li>
 						</ul>
+						<div class="show">
 						<div class="InfoList">
 							<div class="tit">
 								<span></span>
@@ -33,13 +35,14 @@
 								邮箱：
 							</div>
 							<div class="input" >
-								<input  type="text" value="请使用邮箱登录" onfocus="if(this.value=='请使用邮箱登录') {this.value='';}" onblur="if(this.value==''){ this.value='请使用邮箱登录'}">
-								 <p  id="error"> 
+								<input  id="inputbox1" type="text" num="1" placeholder="请使用邮箱登录" class="inputbox"  onfocus="if(this.placeholder=='请使用邮箱登录') {this.placeholder='';}" onblur="if(this.placeholder==''){ this.placeholder='请使用邮箱登录'}" >
+								 <p  id="error1" class="error"> 
 									<span></span>请输入常用邮箱
 								</p>
-								<p  id="notice"> 
+								<p  id="notice1" class="notice"> 
 									<span></span>请输入你的常用邮箱不要使用私人邮箱作为官方微博注册邮箱
 								</p>
+
 								<div class="attachment">
 								没有邮箱？
 								<a href="#">用手机注册</a>
@@ -53,12 +56,12 @@
 								设置密码：
 							</div>
 							<div class="input" >
-								<input   type="text" value="">
-								<p id="error"> 
-									<span ></span>请输入密码
+								<input class="inputbox" id="inputbox2" num="2"  type="text" value="">
+								<p  id="error2" class="error"> 
+									<span></span>请输入密码
 								</p>
-								<p  id="notice"> 
-									<span></span>请输入你的常用邮箱不要使用私人邮箱作为企业微博注册邮箱
+								<p  id="notice2" class="notice"> 
+									<span></span>请输入密码
 								</p>
 							</div>
 						</div>
@@ -69,11 +72,11 @@
 								官方注册微博名：
 							</div>
 							<div class="input" >
-								<input   type="text" value="请参考组织/企业/品牌全称" onfocus="if(this.value=='请参考组织/企业/品牌全称') {this.value='';}" onblur="if(this.value==''){ this.value='请参考组织/企业/品牌全称'}">
-								<p  id="error"> 
+								<input  class="inputbox" id="inputbox3" num="3" type="text" value="请参考组织/企业/品牌全称" onfocus="if(this.value=='请参考组织/企业/品牌全称') {this.value='';}" onblur="if(this.value==''){ this.value='请参考组织/企业/品牌全称'}">
+								<p  id="error3" class="error"> 
 									<span></span>请输入昵称
 								</p>
-								<p  id="notice"> 
+								<p  id="notice3" class="notice"> 
 									<span></span>请填写企业品牌全称或无歧义简称可输入4-30位，包含英文数字中文
 								</p>
 							</div>
@@ -84,11 +87,17 @@
 								所在地：
 							</div>
 							<div class="input" >
-								<input   type="text" value="">
-								<p  id="error"> 
+								<select id="province">
+									<option value="0">请选择省份</option> 
+								</select>
+								<select id="city">
+									<option value="0">请选择城市</option>
+								</select>
+								
+								<p  id="error4" class="error"> 
 									<span></span>请输入密码
 								</p>
-								<p  id="notice"> 
+								<p  id="notice4" class="notice"> 
 									<span></span>请填入验证码
 								</p>
 							</div>
@@ -99,16 +108,77 @@
 								验证码：
 							</div>
 							<div class="input" >
-								<input id="yanzheng"  type="text" value="">
-								<a href="#"></a>
+								<input id="yanzheng" class="inputbox" num="5" type="text" value="">
+								 <a href="#" id="Images"></a>
 								<div id="btn1" class="btn">换一换</div>
-								<p  id="error" class="yangzhengma"> 
+								<p  id="error5" class="error yangzhengma"> 
 									<span></span>请输入验证码
 								</p>
-								<p  id="notice"> 
+								<p  id="notice5" class="notice"> 
 									<span></span>请填入验证码
 								</p>
 							</div>
+						</div>
+						</div>
+						<div class="hide">
+						<div class="InfoList">
+							<div class="tit mobile">
+								<span></span>
+								<i>*</i>
+								手机：
+							</div>
+							<div class="input" >
+
+								<input  id="inputbox6" type="text" num="6" placeholder="请输入你的手机号码" class="inputbox"  onfocus="if(this.placeholder=='请输入你的手机号码') {this.placeholder='';}" onblur="if(this.placeholder==''){ this.placeholder='请输入你的手机号码'}" >
+
+								
+								 <p  id="error6" class="error"> 
+									<span></span>请输入你的手机号码
+								</p>
+								<p  id="notice6" class="notice"> 
+									<span></span>请输入你的手机号码
+								</p>
+
+								<div class="attachment">
+									没有手机？
+									<a href="#">用邮箱注册</a>
+								</div>
+							</div>
+						</div>
+						<div class="InfoList">
+							<div class="tit">
+								
+								<i>*</i>
+								设置密码：
+							</div>
+							<div class="input" >
+								<input class="inputbox" id="inputbox7" num="7"  type="text" value="">
+								<p  id="error7" class="error"> 
+									<span></span>请输入密码
+								</p>
+								<p  id="notice7" class="notice"> 
+									<span></span>请输入密码
+								</p>
+							</div>
+						</div>
+						<div class="InfoList">
+							<div class="tit">
+								
+								<i>*</i>
+								激活码：
+							</div>
+							
+							<div class="input" >
+								<div id="submitS"><a href="#"><em>免费获取短信激活码</em></a></div> 
+								<input class="inputbox jihuoma" id="inputbox8" num="2"  type="text" value="">
+								<p  id="error8" class="error"> 
+									<span></span>请输入短信激活码
+								</p>
+								<p  id="notice8" class="notice"> 
+									<span></span>请输入短信激活码
+								</p>
+							</div>
+						</div>
 						</div>
 						<div class="submit"><a href="#"><span>立即注册</span></a></div> 
 						<div class="content2"> 
