@@ -1,0 +1,617 @@
+	<div class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">Clearlove</span>
+			<a class="TTClose" href="#">¹Ø±Õ</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">Èº³ÉÔ±</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">Èº×ÊÁÏ</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">ÁÄÌì¼ÇÂ¼</a>
+				</li>
+			</ul>
+		</div>
+		<div class="TalkBottom">
+			<div class="TBFace">
+				<a class="TBFacePic" href="#"></a>
+			</div>
+			<textarea class="TBInput"></textarea>
+			<button class="TBBtn">
+				<span>·¢ËÍ</span>
+			</button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************ÐÞ¸Äºó***********************************************
+	<div id="'+ talkid +'"  class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">'+ cAname +'</span>
+			<a class="TTClose" href="#">¹Ø±Õ</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">Èº³ÉÔ±</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">Èº×ÊÁÏ</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">ÁÄÌì¼ÇÂ¼</a>
+				</li>
+			</ul>
+		
+			<div class="TalkBottomArea">
+
+				<!-- ÁÄÌìÄÚÈÝÇøÓò -->
+
+				<div class="TalkDesContent">
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ÄãÊÇÎÒµÄÐ¡Ñ¾Ð¡Æ»¹û</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ÔõÃ´°®Äã¶¼²»ÏÓ¶à</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ºìºìµÄÐ¡Á³¶ùÎÂÅ¯ÎÒµÄÐÄÎÑ£¬µãÁÁÎÒÉúÃüµÄ»ð»ð»ð»ð»ð»ð»ð£¡.........</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- ÁÄÌìÄÚÈÝÇøÓò end-->
+
+				<!-- ÁÄÌì¿òµ×²¿ -->
+				<div class="TalkBottom">
+					<div class="TBFace">
+						<a class="TBFacePic" href="#"></a>
+					</div>
+					<input class="TBInput" value=""/>
+					<button class="TBBtn">
+						<span>·¢ËÍ</span>
+					</button>
+				</div>
+				<!-- ÁÄÌì¿òµ×²¿ end -->
+
+				<!-- ÁÄÌì±íÇé -->
+				<div isshow="no" class="qqimages">
+					<div class="qqimagesArea qqimagesA01">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="±Õ×ì"></li>
+							<li class="qqimageEve" title="Ë¯"></li>
+							<li class="qqimageEve" title="´ó¿Þ"></li>
+							<li class="qqimageEve" title="ÞÏÞÎ"></li>
+							<li class="qqimageEve" title="·¢Å­"></li>
+							<li class="qqimageEve" title="µ÷Æ¤"></li>
+							<li class="qqimageEve" title="ö·ÑÀ"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¾ªÑÈ"></li>
+							<li class="qqimageEve" title="ÄÑ¹ý"></li>
+							<li class="qqimageEve" title="¿á"></li>
+							<li class="qqimageEve" title="Àäº¹"></li>
+							<li class="qqimageEve" title="×¥¿ñ"></li>
+							<li class="qqimageEve" title="ÍÂ"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA02 disnone">
+						<ul> 
+							<li class="qqimageEve" title="ÍµÐ¦"></li>
+							<li class="qqimageEve" title="¿É°®"></li>
+							<li class="qqimageEve" title="°×ÑÛ"></li>
+							<li class="qqimageEve" title="°ÁÂý"></li>
+							<li class="qqimageEve" title="¼¢¶ö"></li>
+							<li class="qqimageEve" title="À§"></li>
+							<li class="qqimageEve" title="¾ª¿Ö"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Á÷º¹"></li>
+							<li class="qqimageEve" title="º©Ð¦"></li>
+							<li class="qqimageEve" title="´ó±ø"></li>
+							<li class="qqimageEve" title="·Ü¶·"></li>
+							<li class="qqimageEve" title="ÖäÂî"></li>
+							<li class="qqimageEve" title="ÒÉÎÊ"></li>
+							<li class="qqimageEve" title="Ðê"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="ÔÎ"></li>
+							<li class="qqimageEve" title="ÕÛÄ¥"></li>
+							<li class="qqimageEve" title="Ë¥"></li>
+							<li class="qqimageEve" title="÷¼÷Ã"></li>
+							<li class="qqimageEve" title="ÇÃ´ò"></li>
+							<li class="qqimageEve" title="ÔÙ¼û"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA03 disnone">
+						<ul> 
+							<li class="qqimageEve" title="²Áº¹"></li>
+							<li class="qqimageEve" title="¿Ù±Ç"></li>
+							<li class="qqimageEve" title="¹ÄÕÆ"></li>
+							<li class="qqimageEve" title="ôÜ´óÁË"></li>
+							<li class="qqimageEve" title="»µÐ¦"></li>
+							<li class="qqimageEve" title="×óºßºß"></li>
+							<li class="qqimageEve" title="ÓÒºßºß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¹þÇ·"></li>
+							<li class="qqimageEve" title="±ÉÊÓ"></li>
+							<li class="qqimageEve" title="Î¯Çü"></li>
+							<li class="qqimageEve" title="¿ì¿ÞÁË"></li>
+							<li class="qqimageEve" title="ÒõÏÕ"></li>
+							<li class="qqimageEve" title="Ç×Ç×"></li>
+							<li class="qqimageEve" title="ÏÅ"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¿ÉÁ¯"></li>
+							<li class="qqimageEve" title="²Ëµ¶"></li>
+							<li class="qqimageEve" title="Î÷¹Ï"></li>
+							<li class="qqimageEve" title="Æ¡¾Æ"></li>
+							<li class="qqimageEve" title="ÀºÇò"></li>
+							<li class="qqimageEve" title="Æ¹ÅÒ"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA04 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA05 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA06 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+
+
+
+					<div class="qqimagesSelect">
+						<ul>
+							<li><a changecss="qqimagesA01" class="qqISIcon qqISIconClick"></a> </li>
+							<li><a changecss="qqimagesA02" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA03" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA04" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA05" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA06" class="qqISIcon"></a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- ÁÄÌì±íÇé end-->
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+<div class="TalkArea">
+		<div class="TalkTop">
+			<div class="TTTap" href="#">
+				<a href="#"></a>
+			</div>
+			<span class="TTName">Clearlove</span>
+			<a class="TTClose" href="#">¹Ø±Õ</a>
+		</div>
+		<div class="TalkContent">
+			<ul class="TCTap" isshow="false">
+				<li class="TCTapLi">
+					<a class="TCTPic t01"></a>
+					<a class="TCTWord">Èº³ÉÔ±</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t02"></a>
+					<a class="TCTWord">Èº×ÊÁÏ</a>
+				</li>
+				<li class="TCTapLi">
+					<a class="TCTPic t03"></a>
+					<a class="TCTWord">ÁÄÌì¼ÇÂ¼</a>
+				</li>
+			</ul>
+		
+			<div class="TalkBottomArea">
+
+				<!-- ÁÄÌìÄÚÈÝÇøÓò -->
+
+				<div class="TalkDesContent">
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ÄãÊÇÎÒµÄÐ¡Ñ¾Ð¡Æ»¹û</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ÔõÃ´°®Äã¶¼²»ÏÓ¶à</div>
+						</div>
+						
+					</div>
+					<div class="TalkDesContentA">
+						<div class="TCAHeader"></div>
+						<div class="TCALeft">
+							<div class="TCALNickName">Van</div>
+							<div class="TCALWords">ºìºìµÄÐ¡Á³¶ùÎÂÅ¯ÎÒµÄÐÄÎÑ£¬µãÁÁÎÒÉúÃüµÄ»ð»ð»ð»ð»ð»ð»ð£¡.........</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- ÁÄÌìÄÚÈÝÇøÓò end-->
+
+				<!-- ÁÄÌì¿òµ×²¿ -->
+				<div class="TalkBottom">
+					<div class="TBFace">
+						<a class="TBFacePic" href="#"></a>
+					</div>
+					<textarea class="TBInput"></textarea>
+					<button class="TBBtn">
+						<span>·¢ËÍ</span>
+					</button>
+				</div>
+				<!-- ÁÄÌì¿òµ×²¿ end -->
+
+				<!-- ÁÄÌì±íÇé -->
+				<div isshow="no" class="qqimages">
+					<div class="qqimagesArea qqimagesA01">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="±Õ×ì"></li>
+							<li class="qqimageEve" title="Ë¯"></li>
+							<li class="qqimageEve" title="´ó¿Þ"></li>
+							<li class="qqimageEve" title="ÞÏÞÎ"></li>
+							<li class="qqimageEve" title="·¢Å­"></li>
+							<li class="qqimageEve" title="µ÷Æ¤"></li>
+							<li class="qqimageEve" title="ö·ÑÀ"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¾ªÑÈ"></li>
+							<li class="qqimageEve" title="ÄÑ¹ý"></li>
+							<li class="qqimageEve" title="¿á"></li>
+							<li class="qqimageEve" title="Àäº¹"></li>
+							<li class="qqimageEve" title="×¥¿ñ"></li>
+							<li class="qqimageEve" title="ÍÂ"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA02 disnone">
+						<ul> 
+							<li class="qqimageEve" title="ÍµÐ¦"></li>
+							<li class="qqimageEve" title="¿É°®"></li>
+							<li class="qqimageEve" title="°×ÑÛ"></li>
+							<li class="qqimageEve" title="°ÁÂý"></li>
+							<li class="qqimageEve" title="¼¢¶ö"></li>
+							<li class="qqimageEve" title="À§"></li>
+							<li class="qqimageEve" title="¾ª¿Ö"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Á÷º¹"></li>
+							<li class="qqimageEve" title="º©Ð¦"></li>
+							<li class="qqimageEve" title="´ó±ø"></li>
+							<li class="qqimageEve" title="·Ü¶·"></li>
+							<li class="qqimageEve" title="ÖäÂî"></li>
+							<li class="qqimageEve" title="ÒÉÎÊ"></li>
+							<li class="qqimageEve" title="Ðê"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="ÔÎ"></li>
+							<li class="qqimageEve" title="ÕÛÄ¥"></li>
+							<li class="qqimageEve" title="Ë¥"></li>
+							<li class="qqimageEve" title="÷¼÷Ã"></li>
+							<li class="qqimageEve" title="ÇÃ´ò"></li>
+							<li class="qqimageEve" title="ÔÙ¼û"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA03 disnone">
+						<ul> 
+							<li class="qqimageEve" title="²Áº¹"></li>
+							<li class="qqimageEve" title="¿Ù±Ç"></li>
+							<li class="qqimageEve" title="¹ÄÕÆ"></li>
+							<li class="qqimageEve" title="ôÜ´óÁË"></li>
+							<li class="qqimageEve" title="»µÐ¦"></li>
+							<li class="qqimageEve" title="×óºßºß"></li>
+							<li class="qqimageEve" title="ÓÒºßºß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¹þÇ·"></li>
+							<li class="qqimageEve" title="±ÉÊÓ"></li>
+							<li class="qqimageEve" title="Î¯Çü"></li>
+							<li class="qqimageEve" title="¿ì¿ÞÁË"></li>
+							<li class="qqimageEve" title="ÒõÏÕ"></li>
+							<li class="qqimageEve" title="Ç×Ç×"></li>
+							<li class="qqimageEve" title="ÏÅ"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="¿ÉÁ¯"></li>
+							<li class="qqimageEve" title="²Ëµ¶"></li>
+							<li class="qqimageEve" title="Î÷¹Ï"></li>
+							<li class="qqimageEve" title="Æ¡¾Æ"></li>
+							<li class="qqimageEve" title="ÀºÇò"></li>
+							<li class="qqimageEve" title="Æ¹ÅÒ"></li>
+							<li class="qqimageEve" title="delKey"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA04 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA05 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+					<div class="qqimagesArea qqimagesA06 disnone">
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+						<ul> 
+							<li class="qqimageEve" title="Î¢Ð¦"></li>
+							<li class="qqimageEve" title="Æ²×ì"></li>
+							<li class="qqimageEve" title="É«"></li>
+							<li class="qqimageEve" title="·¢´ô"></li>
+							<li class="qqimageEve" title="µÃÒâ"></li>
+							<li class="qqimageEve" title="Á÷Àá"></li>
+							<li class="qqimageEve" title="º¦Ðß"></li>
+						</ul>
+					</div>
+
+
+
+					<div class="qqimagesSelect">
+						<ul>
+							<li><a changecss="qqimagesA01" class="qqISIcon qqISIconClick"></a> </li>
+							<li><a changecss="qqimagesA02" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA03" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA04" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA05" class="qqISIcon"></a> </li>
+							<li><a changecss="qqimagesA06" class="qqISIcon"></a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- ÁÄÌì±íÇé end-->
+
+			</div>
+		</div>
+	</div>

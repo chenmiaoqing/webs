@@ -1,0 +1,221 @@
+body{ background-image: url("../images/1.jpg"); background-size: 100% 110%;}
+.disnone{ display: none;}
+
+#QQ{ width: 280px; height: 580px; margin-left: 200px; float: left; position: relative;}
+#MyInfo{ width: 280px; height: 75px; padding: 2px 20px 2px 20px;}
+#FriendArea{ width: 280px; height: 500px; border-radius: 7px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); background-color: #FFF;}
+.FriendA{ width: 280px; height: 450px; }
+
+
+#MyInfoA{width: 240px; height: 46px;}
+.MyHeader{position: relative; float: left; width: 40px; height: 40px; display: block; background-image: url("../images/getface.jpg");box-shadow: rgb(0, 0, 0) 1px 1px 5px 0px;border: 3px solid #fff;}
+/*头像上的小图标*/
+#SZIconnone{position: absolute; left: 30px; top: 28px;}
+
+.MyInfoRight{ width: 180px; height: 46px; float: right;}
+.MyNickName{ display: block; width: 180px; height: 22px; text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow; font-size: 16px;}
+.Myshuoshuo{ display: block; width: 180px; height: 22px; font-size: 12px;text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow; margin-top: 2px;}
+#icon_list{ height: 15px; margin-top: 6px; line-height: 22px;}
+.iconA{ display: block; width: 15px; height: 15px; background-image: url("images/icons_list.png"); float: left; margin-right: 6px; line-height: 22px;}
+.icon01{ background-position: 0 -1px;} 
+.icon02{ background-position: -20px -1px;} 
+.icon03{ background-position: -40px -1px;} 
+.icon04{ background-position: -60px -1px;} 
+.icon05{ background-position: -81px -1px;} 
+.icon06{ background-position: -103px -1px;} 
+.icon07{ background-position: -122px -1px;} 
+.icon08{ background-position: -144px -1px;} 
+.icon09{ background-position: -166px -1px;} 
+
+
+.FATop{ width: 230px; height: 19px; background-image: linear-gradient(#555, #222);  border-top-left-radius: 6px; border-top-right-radius: 6px;  text-align: center; font-size: 18px; color: #FFF; padding: 13px 30px 13px 20px;font-family: "微软雅黑";}
+.FAContent{ width: 280px; height: 405px; overflow: auto;}
+#FAFooter{display: block; width: 280px; height: 50px;  background-image: linear-gradient(#555, #222);  border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+.FAFLi{width: 68px; height: 50px; cursor: pointer;border-right: 1px solid #222;border-left: 1px solid #555; float: left;}
+.FAFLiLeft{ border-left: 0;}
+.FAFLiRight{ border-right: 0;}
+.FAFPic{ display: block; width: 34px; height: 34px; margin:  0 17px 0 17px;}
+.FAFPic01{ background-image: url("images/huihuaB.png"); background-size: 34px 34px;}
+.FAFPic02{ background-image: url("images/lianxiren.png"); background-size: 34px 34px;}
+.FAFPic03{ background-image: url("images/faxian.png"); background-size: 34px 34px;}
+.FAFPic04{ background-image: url("images/shezhi.png"); background-size: 34px 34px;}
+.FAFP01{ background-image: url("images/huihuaB.png"); background-size: 34px 34px;}
+.FAFP02{ background-image: url("images/lianxirenB.png"); background-size: 34px 34px;}
+.FAFP03{ background-image: url("images/faxianB.png"); background-size: 34px 34px;}
+.FAFP04{ background-image: url("images/shezhiB.png"); background-size: 34px 34px;}
+
+.FAFChangeColor{background-color: #333;}
+
+.FAFWord{display: block; height: 12px; color: #CCC; font-size: 12px; text-align: center;font-family: "微软雅黑"; line-height: 12px;}
+
+
+
+.chatA{ width: 261px; height: 57px; padding: 2px 1px 2px 1px;background-image: linear-gradient(#FFF, #F1F1F1); cursor: pointer;}
+.chatHeader{ width: 40px; height: 40px; margin: 8px 8px 8px 8px;  background-size: 40px 40px; display: block; float: left;}
+#Friend01{background-image: url("../images/hanbing.jpg");background-size: 40px 40px; }
+#Friend02{background-image: url("../images/kate.jpg");background-size: 40px 40px; }
+#Friend03{background-image: url("../images/baonv.jpg");background-size: 40px 40px; }
+#Friend04{background-image: url("../images/nvjing.jpg");background-size: 40px 40px; }
+#Friend05{background-image: url("../images/fengnv.jpg");background-size: 40px 40px; }
+#Friend06{background-image: url("../images/hanbing.jpg");background-size: 40px 40px; }
+#Friend07{background-image: url("../images/kate.jpg");background-size: 40px 40px; }
+#Friend08{background-image: url("../images/baonv.jpg");background-size: 40px 40px; }
+
+.chatARight{ width: 200px; height: 57px; float: left;}
+.chatName{color: #111; display: inline-block;  height: 22px; padding: 4px 0 0 6px; font-family: "微软雅黑"; font-weight: 400; font-size: 16px; line-height: 23px;}
+.chatNameA{display: inline-block; padding: 4px 0 0 2px; font-size: 12px; line-height: 23px; color: #AAA;}
+.chatInfo{ display: block; width: 200px; height: 23px;  padding: 4px 0 4px 6px; font-size: 12px; line-height: 23px; color: #AAA; float: left; overflow:hidden;}
+
+
+
+/*联系人*/
+.LXRChatKind{ width: 280px ; height: 35px; cursor: pointer;}
+.LXRChatKindLi{display: block; width: 93px; height: 16px; float: left; padding: 10px 0 10px 0; border-bottom: 2px solid #ccc;}
+.LXRChatKindLA{display: block; font-family: 微软雅黑; line-height: 16px;border-right: 1px solid #d8d8d8; display: block;  width: 93px; height: 16px; text-align: center; font-size: 16px;}
+
+.LXRfriend{}
+.LXRqun{ width: 94px;}
+.LXRtalk a{ border-right: 0;}
+
+.LXRList{ width: 100%; height: 370px; overflow-y: auto;overflow-x :hidden;}
+.LXRLi{ width: 100%; min-height: 40px; border-bottom: 1px solid #CCC; margin-top: 2px;}
+.LXRLiA{ width: 240px; height: 20px; display: block; padding: 10px 28px 10px 10px; cursor: pointer; }
+.LXRLiPic{margin-top: 4px; width: 14px; height: 14px;display: block; background-image: url("images/open_arrow.png"); background-size: 14px 14px; background-repeat: no-repeat; float: left;}
+.LXRGroupName{ float: left; color: #000; padding-left: 4px; font-size: 16px;display: inline-block; font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.LXRGroupNum{ float: right; color: gray; font-size: 12px;font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+.LXRLiDes{ width: 100%; height: auto; display: none;}
+.LXRLiDesA{ width: 100%; height: 56px; background-color: #F5F5F5; border:1px solid #e3e3e3; border-bottom: 0; margin-top: 2px; background-image: linear-gradient(#F5F5F5, #F5F5F5);}
+
+
+
+.LXRChatKindSpe{ color: #0AA7FF; border-bottom: 2px solid #0AA7FF;}
+
+
+/*群*/
+.LXRqunLi{ width: 262px; height: 41px;border-color: #CCC; border-bottom: 1px solid #CCC; background-color: #F5F5F5; padding: 8px;}
+.LXRqunPic{ display: block; width: 40px; height: 40px; background-image: url("images/getfacequn.jpg"); float: left;}
+.LXRqunLi span{font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 16px; float: left; padding: 4px 0 0 12px;}
+.LXRTalkPic{display: block; width: 40px; height: 40px; background-image: url("images/discu_avatar.png"); background-repeat: no-repeat; background-size: 40px 40px; float: left;}
+
+/*联系人end*/
+
+
+
+/*设置*/
+.group{padding: 10px; cursor: pointer;}
+.SZkuang{border: 1px solid #afc8e2; border-radius: 5px; width: 238px; padding: 10px;}
+.SZMyInfo{ height: 58px;}
+.SZshuoshuo{ height: 22px;}
+.SZqita{ height: 16px;}
+.SZHeader{ width: 56px; height: 58px; float: left;}
+.SZHeader a{width: 40px; height: 40px; margin: 8px; display: block;}
+.SZMImid{ width: 150px; height: 45px; padding: 5px 0 0 3px; float: left;}
+.SZNickName{ width: 153px; height: 31px; display: block; line-height: 31px; font-size: 22px; font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.SZNumber{width: 153px; height: 14px; font-size: 12px; line-height: 14px;font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.onlineState{ width: 22px; height: 20px; margin: 30px 0 0 0; float: left; cursor: pointer; position: relative;}
+.onlineIcon{float: left; display: block; width: 10px; height: 10px; background-image: url("images/state_sprite.gif"); margin-right: 2px;margin-top: 2px;}
+.onlineTip{float: left; display: block;width: 10px; height: 10px;background-image: url("images/state_sprite.gif"); background-position: -163px 4px;}
+.OSList{background-color: #FFF; display: none; width: 72px; height: 156px;border: 1px solid #000; position: absolute; left: -45px; top: 20px; }
+.OSLi{padding: 5px 3px 5px 3px; height: 12px; line-height: 12px;}
+.OSLWord{ height: 12px; line-height: 12px;font-size: 12px;font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.SZIcon02{ background-position: -72px 0;}
+.SZIcon03{ background-position: -18px 0;}
+.SZIcon04{ background-position: -36px 0;}
+.SZIcon05{ background-position: -108px 0;}
+.SZIcon06{ background-position: -54px 0;}
+.SZIcon07{ background-position: -90px 0;}
+.OSLi:hover{ background-color: #cff7ff;}
+.more_icon{ width: 16px; height: 16px; display: block; background-image: url("images/more_icon.png"); background-size: 100% 100%; float: right;}
+.logionout{ display: block; font-size: 16px; line-height: 16px; text-align: center; font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif; background: linear-gradient(#f74634,#ce2715)!important;text-shadow: 0 0 10px #969696; color: #FFF;}
+.lable01{font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; height: 16px; line-height: 16px;}
+.lable02{ color: #666;font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px; height: 16px; line-height: 16px;}
+/*设置end */
+
+
+
+/*发现*/
+.FXContent{ width: 280px; height: 93px; display: block;}
+.FXCLi{float: left; border: 1px solid #eceef2;border-bottom-color: #c1c7d2;border-right-color: #c1c7d2;display: block; width: 91px; height: 93px; background-image: linear-gradient(rgb(231, 232, 235), rgb(218, 219, 224) 50%, rgb(199, 203, 210) 75%, rgb(211, 214, 219) 95%, rgb(211, 214, 221));background-color: rgb(218, 219, 224);}
+.FXCLiPic{width: 54px; height: 54px; margin: 8px 20px 4px 20px; display: block;}
+.FXCLiPic01{ background-image: url("images/plugin_icon_qzone.jpg"); background-size: 54px 54px;}
+.FXCLiPic02{ background-image: url("images/plugin_icon_qmail.jpg"); background-size: 54px 54px;}
+.FXCLiPic03{ background-image: url("images/plugin_icon_qq_portal.png"); background-size: 54px 54px;}
+.FXCLiWord{ text-align: center; display: block; font-size: 13px; height: 19px; line-height: 19px;font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+/*发现end*/
+
+/*聊天框*/
+.TalkArea{ width: 700px; height: 500px; border: 1px solid #000; border-radius: 7px; position: absolute; left: 500px; top: 80px;}
+.TalkTop{ width: 700px; height: 45px; background-image: linear-gradient(#555, #222);  border-top-left-radius: 6px; border-top-right-radius: 6px;}
+.TalkContent{ width: 700px; height: 455px;background-color: #e9e9e9; position: relative; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+.TalkBottom{ position: absolute; top: 405px; width: 684px; height: 42px; background-image: linear-gradient(#555, #222);  border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding: 3px 10px 5px 6px;}
+.TTTap{width: 49px; height: 19px; border: 1px solid #2C2727; border-radius: 3px; float: left; margin:5px 0 7px 15px;  padding: 6px 10px 6px 10px; cursor: pointer;background-image: linear-gradient(#555, #222);}
+.TTTap a{ width: 14px; height: 14px; background-image: url("images/TalkTop01.png"); background-size: 100% 100%; background-repeat: no-repeat; display: block;}
+.TTName{ float: left; width: 471px; height: 19px; padding: 13px 30px 13px 20px; text-align: center; color: #FFF; font-size: 18px; font-weight: bold;}
+.TTClose{width: 61px; height: 19px; margin: 5px 10px 7px 0; padding: 6px 10px 6px 10px; float: right;font-size: 14px; font-family: "微软雅黑"; text-align: center; display: block;border: 1px solid #2C2727; border-radius: 3px; text-decoration: none;color: #FFF;cursor: pointer;background-image: linear-gradient(#555, #222);}
+.TBFace{ width:38px; height: 32px; float: left; padding: 5px; cursor: pointer;}
+.TBFacePic{width: 30px; height: 30px; display: block; background-image: url("images/TalkBottom01.png"); background-size: 30px 30px;}
+.TBInput{display: block; width: 558px; height: 32px; border-radius: 5px; padding: 5px 10px 5px 10px; margin: 5px 10px 5px 6px; float: left;background: none repeat scroll 0% 0% #F9F9F9;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset;font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px;}
+.TBBtn{cursor: pointer; padding: 3px 10px 3px 10px; border-radius: 5px; border: 1px solid #044062; float: right; background-image: url("images/btnsend.png"); background-repeat: repeat-x; text-shadow: rgb(25, 75, 126) 0px 1px 1px;}
+
+/*background: -moz-linear-gradient(center top , #5F9CC5, #396B9E) repeat scroll 0% 0% transparent;*/
+
+.TBBtn span{width: 34px; height: 28px; font-size: 14px; color: #fff; display: block; line-height: 28px;}
+.TCTap{ display: none; width: 700px; height: 80px;box-shadow: 0px 2px 5px #141111;background: none repeat scroll 0% 0% #3C3C3C;}
+.TCTapLi{cursor: pointer; display: block; width: 80px; height: 80px; background-image: linear-gradient(#4E4E4E, #2C2C2C); float: left; border-left: 1px solid #555; border-right: 1px solid #222;}
+.TCTPic{ display: block; width: 40px; height: 40px; background-image: url("images/menu_icons.png");  background-repeat: no-repeat; margin: 10px 20px 0 20px;}
+.t01{background-position: 0 2px;}
+.t02{background-position: -43px 2px;}
+.t03{background-position: -90px 2px;}
+.TCTWord{display:inline-block; width: 100%; font-size: 12px; color: #FFF; text-align: center;font-family: "微软雅黑";}
+
+/*聊天内容*/
+.TalkDesContent{ width: 700px; height: 405px; position: absolute; overflow: auto;}
+.TalkDesContentA{ width: 680px; min-height: 66px; height: auto; float: right; padding: 10px;}
+.TCAHeader{ width: 40px; height: 40px; background-image: url("../images/MyHeader.jpg"); float: right; margin-left: 10px;}
+.TCALeft{ width: 600px; float: right;}
+.TCALNickName{ font-size: 14px; height: 14px; width: 600px; text-align: right; font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;text-shadow: #FFF 1px 1px 1px;}
+.TCALWords{background: linear-gradient(#FFF, #E1E1E1) repeat scroll 0% 0% transparent; font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif; max-width: 340px; padding: 10px 15px 10px 15px; margin-top: 10px; display: inline-block; float: right; font-size: 16px; line-height: 22px; border-radius: 8px; background-color: #FFF; border: 1px solid #000;}
+/*聊天内容 end*/
+/*qqimages*/
+.qqimages{display: none; cursor: pointer; width: 700px; height: 310px; border-bottom-right-radius: 6px;border-bottom-left-radius: 6px; position: absolute; top: 145px;}
+.qqimagesArea{ width: 700px; height: 280px; }
+.qqimagesA01{ background-image: url("images/qqimage_01.jpg"); background-size: 700px 280px;}
+.qqimagesA02{ background-image: url("images/qqimage_02.jpg"); background-size: 700px 280px;}
+.qqimagesA03{ background-image: url("images/qqimage_03.jpg"); background-size: 700px 280px;}
+.qqimagesA04{ background-image: url("images/qqimage_04.jpg"); background-size: 700px 280px;}
+.qqimagesA05{ background-image: url("images/qqimage_05.jpg"); background-size: 700px 280px;}
+.qqimagesA06{ background-image: url("images/qqimage_06.jpg"); background-size: 700px 280px;}
+.qqimagesSelect{ width: 700px; height: 30px; padding: 0 300px 0 300px;}
+.qqISIcon{ display: block; width: 15px; height: 15px; border-radius: 7.5px; background-color: gray; float: left; margin: 5px 5px 10px 5px;}
+.qqISIconClick{background-color:#000;}
+.qqimageEve{ width: 98px; height: 90px; float: left; cursor: pointer;border: 1px solid rgba(202,206,207,0);}
+.qqimageEve:hover{border: 1px solid rgb(95,156,197);}
+/* border: 1px solid rgb(95,156,197);*/
+/*qqimages  end*/
+
+/*聊天框end*/
+
+
+.floatafter:after{width: 0; height: 0; clear: both; display: block;content: "."; visibility: hidden;}
+
+
+
+/*底部图片切换*/
+#PicChange{ width: 280px; height: 45px; position: relative;}
+#PCLeft{ cursor: pointer; position: absolute; display: block; width: 19px; height: 19px; background-image: url("images/arrow_bottom.png"); background-position: -2px -2px; top: 25px;}
+#PCRight{ cursor: pointer; position: absolute; display: block; width: 19px; height: 19px; background-image: url("images/arrow_bottom.png"); background-position: -25px -2px; top: 25px; left: 30px;}
+#fankuiyijian{ cursor: pointer; position: absolute; width: 80px; height: 17px; display: block; font-size: 12px; line-height: 17px; font-family: "微软雅黑"; text-align: center; top: 25px; left: 100px; color: #FFF; background-color: rgba(0,0,0,0.3); border-radius: 7px;}
+#PCLeft:hover{background-position: -2 -42px;}
+#PCRight:hover{background-position: -25px -42px;}
+/*底部图片切换 end*/
+
+
+
+#chatAllArea{width: 860px; height: 620px; float: left;}
+
+
+
+#lianxiren{ display: none;}
+#faxian{ display: none;}
+#shezhi{ display: none;}
