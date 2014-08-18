@@ -1,0 +1,8 @@
+#header{width: 1349px; height: 53px; background-color: #000; border-bottom: 1px solid #191919; z-index: 100px; line-height: 53px; margin-bottom: 1px; position: fixed;}
+#headerLeft{width: 300px; height: 53px; float: left; }
+#headerLL a{ display: inline-block; color: #6E6E6E; padding-left: 15px; padding-right: 15px;}
+.close i{margin: 17px 17px 0 0;float: left;  background-image: url("images/button-17795f92ca8e8b7cb702e5bb9bf081d0.gif"); display: block; width: 16px; height: 16px; background-position: 0 -16px;}
+#headerLL span{ display: inline-block; line-height: 13px;}
+#headerRight{ width: 270px; height: 52px; float: right; background-image: url("images/themeforest-purchasethis-71f56a79736ebb0f4a4d6b7dacb7cf80.png");}
+#flash{width: 1349px; height: 700px; display: block;}
+#flash li{ display:block; height: 700px; background-image: url("../images/flash/slider-1.jpg"); background-repeat: no-repeat; background-position: 0 -150px; }
