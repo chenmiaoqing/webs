@@ -1,8 +1,40 @@
-#header{width: 1349px; height: 53px; background-color: #000; border-bottom: 1px solid #191919; z-index: 100px; line-height: 53px; margin-bottom: 1px; position: fixed;}
+/*头部*/
+#header{width: 1349px; height: 53px; background-color: #000; border-bottom: 1px solid #191919; z-index: 100px; line-height: 53px; margin-bottom: 1px;position: fixed; z-index: 22;}
 #headerLeft{width: 300px; height: 53px; float: left; }
 #headerLL a{ display: inline-block; color: #6E6E6E; padding-left: 15px; padding-right: 15px;}
 .close i{margin: 17px 17px 0 0;float: left;  background-image: url("images/button-17795f92ca8e8b7cb702e5bb9bf081d0.gif"); display: block; width: 16px; height: 16px; background-position: 0 -16px;}
 #headerLL span{ display: inline-block; line-height: 13px;}
 #headerRight{ width: 270px; height: 52px; float: right; background-image: url("images/themeforest-purchasethis-71f56a79736ebb0f4a4d6b7dacb7cf80.png");}
-#flash{width: 1349px; height: 700px; display: block;}
-#flash li{ display:block; height: 700px; background-image: url("../images/flash/slider-1.jpg"); background-repeat: no-repeat; background-position: 0 -150px; }
+/*心形菜单*/
+#menumain{position: fixed;  width: 260px; height: 100%; z-index: 20; top: 0px; right: 0px; margin-right: -200px;}
+#heart{width: 40px; height: 40px; background-color: rgba(222, 103, 95, 0.25); z-index: 20; position: absolute; top: 80px;left: 0; line-height: 40px; cursor: pointer; font-size: 24px; color: #fff; text-align: center; }
+#menu{ position: absolute;top: 53; right: 0px; background-color: #de675f;width: 200px; height: 100%; z-index: 20;}
+#logo{display: block; width: 200px; height: 40px; margin: 20px 0 10px 0;  margin-top: 38px; font-weight: 800;}
+#menu #logo a{font-size:16px;}
+#menu a{ margin-left: 20px;  color: #fff; width: 200px; display: block; margin-top: 20px; font-size: 12px; font-weight: 700; letter-spacing: 2px;}
+
+
+
+
+
+/*flasn动画*/
+#flash{ width: 1349px; height: 700px; display: block; position: fixed; }
+#flash li{ display:block; height: 700px;}
+.img{width: 1349px; height: 917.32px; left: 0px; top: -100px;  position: absolute; }
+.opacity{ opacity:0;}
+#wangge{ background-color: #fff;opacity: 0.2; width: 1349px; height: 700px; position: absolute; top: 23px; left: 1px;  background: -webkit-linear-gradient(top,transparent 2px,#c0c0c0 3px),-webkit-linear-gradient(left,transparent 2px,#c0c0c0  3px); background-size: 3px 3px;}
+
+
+#contentmain{ position: absolute; top:20px; width: 1349px; height: 2500px;}
+#words{margin: 150px 0 0 150px;}
+#words h1{ color: #fff; font-size: 140px; font-weight: 700px; font-family: "Raleway";}
+#words h1 span{font-family: 'Niconne', cursive;}
+#words h2{ display: block; color: #fff; font-size: 50px; font-weight: 100;font-family: 'Niconne', cursive; margin:10px 0 0 250px;}
+#content{ margin-top: 200px; width: 1349px; height: 2000px; background-color: #fff;}
+
+/*计时器*/
+#time{ width: 1140px; height: 254px; padding:  15px; margin: 0 auto; }
+.timecss{ width: 1170px; height: 125px; }
+.timecss h2{ color: #dd675b; margin-bottom: 15px; text-align: center;font-size: 30px; font-family: 'Pacifico', cursive; font-weight: normal;}
+#timeTop{ padding-top: 35px;}
+#timeTop span{background-image: url("images/main-nav-divider.png"); display: block;height: 10px; width: 140px; margin-left: 520px;}
