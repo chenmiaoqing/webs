@@ -85,30 +85,17 @@
 #momentContent{width: 1170px; height: 640px; margin: -75px auto; }
 #momentContent ul{ width: 555px; height: 649px; padding: 0 15px;}
 #momentContent h2{ display: block; font-size: 26px; font-weight: bold;text-align: center;color: #6f6f6f;}
-#momentContent li{ margin: 10px 0 0 0; }
+#momentContent li{ margin: 10px 0 0 0;}
 #momentContent a{ display: block;  margin: 0 0 10px;}
-.mengban{display: block;width: 550px; height: 350px; background-color: #111; position: absolute;top: 0; opacity: 0.7; z-index: 200;}
 #firstline{margin-bottom: 10px;}
 #firstline span{margin-right: 18px; font-size: 16px;}
 #firstline p{ line-height: 28px; font-size: 16px; margin-top: 20px;}
 #firstline em{ display: block; font-size: 60px; margin-top: 20px;  margin-right: 6px; font-style: normal; float: left; }
 #firstline a{display: block;margin: 0 0 10px; color: #f85c37; text-align: center;font-size: 16px; margin-top: 20px; }
 #firstline a:hover{ color: #7b7b7b;}
-.eventli{ position: relative;}
-#momentContent figcaption{ position: absolute;top: 0; z-index: 11;width: 100%;height: 100%; text-align: center;}
-#momentContent figcaption button{ position: absolute; top: 50%;left: 40%;padding: 4px 20px; text-transform: uppercase;letter-spacing: 1px; font-weight: bold; border: 3px solid #fff; color: #FFF;background: transparent; opacity: 0;transform:scale(0.25);transition-duration: 0.3s;transition-property: transform;}
+
+
 
 
 #eventLeft{float: left; }
 #eventRight{ float: right;}
-
-
-#rsvpwrap{ width: 1349px; height: 571px; padding: 30px 0 70px 0; background-image: url("images/rsvp-bg.jpg");}
-#row{width: 1170px; height: 571px; margin: 0 auto;}
-.rowWhite h2{color: #fff; }
-#row ul{width: 360px; height: 446px; padding: 0 15px; margin-left: 390px; }
-#row li{ width: 360px; height: 50px; margin-bottom: 15px;}
-.inputtxt input{ width: 332px; height: 50px; border: 2px solid #fff;  padding: 6px 12px; outline: none;}
-.bg{background: transparent; }
-.inputtxtS textarea{ width: 332px; height: 150px; border: 2px solid #fff;  padding: 6px 12px; outline: none;}
-#row #select{ width: 360px; height: 22px; text-align: center; font-size: 14px; letter-spacing: 1px;}

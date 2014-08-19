@@ -40,34 +40,6 @@ $(function(){
  		$(this).find(".pink").animate({"opacity":"0"},0);
  		
  	});
-
-
- 	$(".eventli").mouseover(function(){
- 		$(this).find("button").animate({"opacity":"1"},300);
- 		$(this).find("button").css("transform","scale(1)");
- 		$(".mengban").animate({"opacity":"0"},300);
- 		
- 	});
-
- 	$(".eventli").mouseleave(function(){
- 		$(this).find("button").animate({"opacity":"0"},300);
- 		$(this).find("button").css("transform","scale(0.25)");
- 		$(".mengban").animate({"opacity":"0.7"},300);
- 		
- 		
- 	});
-
- 	$("input,textarea").focus(function(){
- 		$(this).css("border","2px solid rgb(222, 103, 95)");
- 		$(this).removeClass("bg")
- 	});
- 	$("input,textarea").blur(function(){
- 		$(this).css("border","");
- 		$(this).addClass("bg")
- 	});
-
-
- 
 	
 
 
