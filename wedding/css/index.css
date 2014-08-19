@@ -110,5 +110,29 @@
 #row li{ width: 360px; height: 50px; margin-bottom: 15px;}
 .inputtxt input{ width: 332px; height: 50px; border: 2px solid #fff;  padding: 6px 12px; outline: none;}
 .bg{background: transparent; }
+#row .inputtxtS{width: 332px; height: 150px;}
 .inputtxtS textarea{ width: 332px; height: 150px; border: 2px solid #fff;  padding: 6px 12px; outline: none;}
-#row #select{ width: 360px; height: 22px; text-align: center; font-size: 14px; letter-spacing: 1px;}
+#row #select{ width: 360px; height: 22px;  font-size: 14px; letter-spacing: 1px; text-align: center;}
+.radio{ margin-left: 10px; margin-right: 10px; }
+#row .inputtxtSS{width: 320px; height: 34px; margin-bottom: 15px; }
+.inputtxtSS input{width: 336px; height: 34px; padding: 6px 12px; border: 1px solid #285e8e;background-color: #428bca;color: #fff;  border-bottom: 3px solid #464d9c;}
+.inputtxtSS input:hover{background-color: #3276b1; }
+
+
+
+#container{width: 1140px; height: 332px; padding:35px 15px; margin: 0 auto; }
+#textS{ width: 555px; height: 112px; margin-bottom: 25px;background-color: #fff; margin: 0 auto;}
+#container ul{width: 555px; height: 30px;margin: 0 auto 10px auto; }
+#container li{ display: inline-block; padding: 0 5px;}
+#contentmainBottom{width: 1349px; height: 123px; padding: 35px 0; background-color: #E0E0E0; }
+#jiyu{margin: 0 auto; width: 1140px; height: 123px; padding: 0 15px;  }
+#jiyu h2{ font-family: 'Pacifico', cursive;color: #dd675b;font-size: 28px;width: 750px; height: 66px; margin: 20px auto 15px;}
+#jiyu span{ font-family: "Roboto Slab"; color: #6f6f6f; font-size: 16px; text-align: center;display:block; margin: 20px auto; width:72px; height: 16px;}
+
+
+
+#footer{width: 1349px; height: 42px;background-color: #2f2f2f; }
+#footerRight{width: 1250px; height: 32px; padding: 10px 0 0 0; }
+#footerRight span{ display: block; float:right; font-size: 14px; letter-spacing: 2px;}
+#footerRight a{color: #f85c37;}
+#footerRight a:hover{color: #6f6f6f; }
