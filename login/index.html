@@ -2,7 +2,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" scr="js/jquery.city.select.js"></script>
+	<script type="text/javascript" src="js/jsAddress.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
@@ -72,10 +72,13 @@
 								官方注册微博名：
 							</div>
 							<div class="input" >
-								<input  class="inputbox" id="inputbox3" num="3" type="text" value="请参考组织/企业/品牌全称" onfocus="if(this.value=='请参考组织/企业/品牌全称') {this.value='';}" onblur="if(this.value==''){ this.value='请参考组织/企业/品牌全称'}">
-								<p  id="error3" class="error"> 
+								<input  class="inputbox" id="inputbox3" num="3" type="text" placeholder="请参考组织/企业/品牌全称" onfocus="if(this.placeholder=='请参考组织/企业/品牌全称') {this.placeholder='';}" onblur="if(this.placeholder==''){ this.placeholder='请参考组织/企业/品牌全称'}">
+
+
+								<p  id="error3"  class="error"> 
 									<span></span>请输入昵称
 								</p>
+
 								<p  id="notice3" class="notice"> 
 									<span></span>请填写企业品牌全称或无歧义简称可输入4-30位，包含英文数字中文
 								</p>
@@ -87,12 +90,10 @@
 								所在地：
 							</div>
 							<div class="input" >
-								<select id="province">
-									<option value="0">请选择省份</option> 
-								</select>
-								<select id="city">
-									<option value="0">请选择城市</option>
-								</select>
+								
+								<select id="cmbProvince"></select>
+								<select id="cmbCity"></select>
+								<select id="cmbArea"></select>
 								
 								<p  id="error4" class="error"> 
 									<span></span>请输入密码
@@ -127,9 +128,90 @@
 								<i>*</i>
 								手机：
 							</div>
-							<div class="input" >
+							<div class="input">
 
-								<input  id="inputbox6" type="text" num="6" placeholder="请输入你的手机号码" class="inputbox"  onfocus="if(this.placeholder=='请输入你的手机号码') {this.placeholder='';}" onblur="if(this.placeholder==''){ this.placeholder='请输入你的手机号码'}" >
+								<div class="guojia">
+									<a class="aa"></a>
+									<div id="menula">
+										<ul class="y_scroll">
+											<li Pic="1" class="li1" isshow="yes">												
+													<em class="y_scrollS"></em>中国
+												
+											</li>
+											<li Pic="2" class=="li2" isshow="no">
+												
+													<em></em>中国香港
+												
+											</li>
+											<li Pic="3" class=="li3" isshow="no">
+												
+													<em></em>中国澳门
+												
+											</li>
+											<li Pic="4" class=="li4" isshow="no">
+												
+													<em></em>中国台湾
+												
+											</li>
+											<li Pic="5" class=="li5" isshow="no">
+												
+													<em></em>美国
+												
+											</li>
+											<li Pic="6" class=="li6" isshow="no">
+												
+													<em></em>加拿大
+												
+											</li>
+											<li Pic="7" class=="li7" isshow="no">
+												
+													<em></em>马来西亚
+												
+											</li>
+											<li Pic="8" class=="li8" isshow="no">
+												
+													<em></em>澳洲
+												
+											</li>
+											<li Pic="9" class=="li9" isshow="no">
+												
+													<em></em>日本
+												
+											</li>
+											<li Pic="10" class=="li10" isshow="no">
+												
+													<em></em>韩国
+												
+											</li>
+											<li Pic="11" class=="li11" isshow="no">
+												
+													<em></em>新加坡
+												
+											</li>
+											<li  Pic="12" class=="li12" isshow="no">
+												
+													<em></em>英国
+												
+											</li>
+											<li  Pic="13" class=="li13" isshow="no">
+												
+													<em></em>法国
+												
+											</li>
+											<li Pic="14" class=="li14" isshow="no">
+												
+													<em></em>俄罗斯
+												
+											</li>
+											<li Pic="15" class=="li15" isshow="no">
+												
+													<em></em>印度
+												
+											</li>
+										</ul>
+									</div>
+									<input class="inputbox" id="inputbox6" num="6" type="text" placeholder="0086请输入您的手机号"  onfocus="if(this.placeholder=='0086请输入您的手机号') {this.placeholder='';}" onblur="if(this.placeholder==''){ this.placeholder='0086请输入您的手机号'}">
+								</div>
 
 								
 								 <p  id="error6" class="error"> 
@@ -154,7 +236,7 @@
 							<div class="input" >
 								<input class="inputbox" id="inputbox7" num="7"  type="text" value="">
 								<p  id="error7" class="error"> 
-									<span></span>请输入密码
+									<span></span>请输入6-16位数字字母或常用符号，字母区分大小写
 								</p>
 								<p  id="notice7" class="notice"> 
 									<span></span>请输入密码
@@ -169,8 +251,8 @@
 							</div>
 							
 							<div class="input" >
-								<div id="submitS"><a href="#"><em>免费获取短信激活码</em></a></div> 
-								<input class="inputbox jihuoma" id="inputbox8" num="2"  type="text" value="">
+								<div class="submitS"><a href="#"><em>免费获取短信激活码</em></a></div> 
+								<input class="inputbox jihuoma" id="inputbox8" num="8"  type="text" value="">
 								<p  id="error8" class="error"> 
 									<span></span>请输入短信激活码
 								</p>
@@ -180,7 +262,7 @@
 							</div>
 						</div>
 						</div>
-						<div class="submit"><a href="#"><span>立即注册</span></a></div> 
+						<div class="submit submitA"><a href="#" class="submitaa"><span>立即注册</span></a></div> 
 						<div class="content2"> 
 							<p><a href="#">微博服务使用协议</a></p> 
 							<p><a href="#">微博个人信息保护政策</a></p> 
