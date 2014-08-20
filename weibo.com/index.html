@@ -11,7 +11,9 @@
 	<!--页眉-->
 	<div id="topNav">
 		<div id="mainNav">	
-			<div id="Logo"></div>
+			<div id="Logo">
+				<a></a>
+			</div>
 			<div id="menu">
 				<li class="topMainLeft1All"><a href="" class="topMainLeft1Title shouye">首页</a></li>
 				<li class="topMainLeft1All">
@@ -28,7 +30,7 @@
 				</li>
 			</div>		
 			<div id="soso">
-				<input type="text" class="input">
+				<input type="text" class="input"  value="大家正在热搜：亚麻绿" onfocus="if(this.value=='大家正在热搜：亚麻绿') {this.value='';}" onblur="if(this.value==''){ this.value='大家正在热搜：亚麻绿'}" >
 				<a href="#" id="inputButton"></a>
 			</div>
 			<div id="person"> 
@@ -335,10 +337,27 @@
 									</li>
 								</ul>
 								<div id="weiboTitleD"></div>
+								<div id="weiboTitleC">
+									<div id="search">高级搜索</div>
+									<div id="close"></div>
+									<div class="conner">
+										<div id="LiLeft">类　型：</div>
+										<div id="LiRight">
+											<span>
+												<input type="checkbox">
+											</span>
+										</div>
+									</div>
+									<div class="conner"></div>
+									<div class="conner"></div>
+									<div class="conner"></div>
+								</div>
 								<div id="weiboTitleB">
 									<div id="weiboTitleBLeft">
-										<input type="text" value="查找作者、内容或标签">
-										<a href="#"></a>
+										<input type="text" value="查找作者、内容或标签" onfocus="if(this.value=='查找作者、内容或标签') {this.value='';}" onblur="if(this.value=='') { this.value='查找作者、内容或标签'}">
+										<a href="#" class="sanjiao"></a>
+										<a>|</a>
+										<a class="fangdajing"></a>
 									</div>
 									<div id="weiboTitleBRight">
 										<a href="#">
@@ -362,9 +381,11 @@
 									</li>
 								</ul>
 							</div>
+
 						</div>
+
 						<!--微博正文-->
-						<div class="RightL4">
+						<!-- <div class="RightL4">
 							<div class="RightL4Content">
 								<div class="RightL4CLeft">
 									<img src="images/UserHeadImages/1.jpg">
@@ -404,7 +425,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="RightL4">
 							<div class="RightL4Content">
 								<div class="RightL4CLeft">

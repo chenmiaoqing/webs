@@ -27,6 +27,7 @@ $(function(){
 	$(".close").click(function(){
 			$(".hide").hide();
 		});
+	
 	$(window).scroll(function(){
 		var scrolls=$(this).scrollTop();
 		if( scrolls>0){
