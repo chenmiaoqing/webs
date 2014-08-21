@@ -147,7 +147,24 @@ $(function(){
 	});
 
 
+	$(".replyed dl").hover(function(){
+		$(this).find(".hover").css("opacity","1");
+	},function(){
+		$(this).find(".hover").css("opacity","0");
+	});
 
+	$(".pinglun").click(function(){
+		var isshow=$(this).attr("isshow");
+		if(isshow=="no"){
+			$(this).parent().parent().next(".reply").show();
+			$(this).attr("isshow","yes");
+		}else{
+			$(this).parent().parent().next(".reply").hide();
+			$(this).attr("isshow","no");
+		}
+
+		
+	});
 
 
 

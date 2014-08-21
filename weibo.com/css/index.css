@@ -121,7 +121,7 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 #mianinput{ width: 572px; height: 107px;}
 #input{width: 558px; height: 88px; margin: 12px 0 0 0; border: 1px solid #ccc;  border-radius:3px; box-shadow: inset  1px 1px 1px 1px #eee ; float: left;}
 #arrow{ width: 11px;  height: 19px; margin-top: 32px; margin-left: -1px; background-image: url("images/all_iconbtn.png"); background-position: -475px 0; float: left;}
-#inputT{ outline: none; width: 554px; height: 84px; padding: 5px; margin: 2px 0 0 2px; border: 0px; overflow-y:auto; overflow-x:hidden; line-height: 18px; word-wrap:break-word;}
+#inputT{ resize:none; outline: none; width: 554px; height: 84px; padding: 5px; margin: 2px 0 0 2px; border: 0px; overflow-y:auto; overflow-x:hidden; line-height: 18px; word-wrap:break-word;}
 #reply{ width: 560px; height: 35px;}
 #replyLeft{ width: 390px; height: 16px; padding-top: 10px;float: left;}
 #replyLeft li{ height: 16px; display:inline-block;margin: 0 14px 0 0; float: left; }
@@ -333,3 +333,30 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 #footerUlBRB span{ font: 12px/1.125 Arial,Helvetica,sans-serif;color: gray;}
 #changeLanguage{ width: 81px; height: 19px; border: 1px solid #ccc; margin: 2px 2px 2px 5px; float: right;}
 #changeLanguage option{font: 12px/1.125 Arial,Helvetica,sans-serif;  font: inherit }
+
+/*回复框*/
+.reply{display: none; width: 453px; height: auto;padding: 10px 20px; border: 1px solid #caddcb; border-radius: 3px; margin-top: 10px; line-height: 20px; background-color: #FAFAFA;  }
+.reply textarea{ resize:none; width: 452px; height: 30px; padding: 5px 0 0 2px;  border: 1px solid #ccc; border-radius: 2px; color: #808080;box-shadow: 0px 1px 1px 0px #fafafa inset; font-size: 12px; line-height: 18px; overflow: hidden;outline: medium none; word-wrap:break-word; }
+.reply ul{display: inline-block; height: 30px;}
+.replyBLeft{float: left; height: 25px; padding-top: 5px; }
+.replyBRight{margin-left: 390px; padding-top: 5px;}
+.reply li{ display:block;}
+.replyBLeft span{ display:block;width: 16px; height: 16px; background-image: url("images/icon.png");background-repeat: no-repeat; background-position:-275px 0; margin: 4px 10px 0 0; float: left;  }
+.replyBLeft a{display: block;float: left; margin-top: 2px; }
+.replyBLeft input{ vertical-align: -3px; margin-right: 3px;}
+.replyBRight a{line-height: 30px; border: 1px solid #ff9b01; background-color: #ffa00a;color: #fff; border-radius: 2px; display: inline-block; cursor: pointer; }
+.replyBRight a span{width: 28px; height: 26px; padding: 0 15px; display: inline-block; height: 26px; line-height: 26px;  border:1px solid #FFB33B; border-radius: 2px;}
+.replyBRight a span em{ font-style: normal; font-weight: normal; font-size: 14px;}
+
+.replyed{overflow: hidden; }
+.replyed dl{padding: 7px 0 10px; margin: -1px 0 0;border-top:1px solid #CADDCB; }
+.replyed dt{ float: left;display: inline; width: 30px; padding: 3px 0 0 0;}
+.replyImg{display: block; width: 30px; height: 30px;}
+.replyed dd{ margin: 0 0 0 40px; line-height: 21px; word-wrap:break-word; vertical-align: text-bottom;}
+.replyed dd a{color: #49976B;}
+.info{ text-align: right;padding: 5px 0 0 0 ;line-height: 15px; overflow: hidden; margin-left: 300px;}
+.hover{opacity: 0; padding: 0 6px 0 8px; float: left;font-style: normal;font-weight: normal; display: block;}
+.hover a:hover{text-decoration: underline;}
+.info a{color: #49976B; display:block; float: left;}
+.info span span{ margin: 0 6px 0 8px; color: #AEAEAE; float: left;}
+.info a i{display: block; width: 13px; height: 14px; background-image: url("images/icon.png"); background-repeat: no-repeat; background-position: -75px 0; }
