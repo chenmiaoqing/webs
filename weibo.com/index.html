@@ -2,7 +2,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="js/jquery-ui-datepicker.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/weibo.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
 	<title>我的新浪首页</title>
@@ -49,18 +53,18 @@
 					<li class="personAA">
 						<a href="#" class="personImg" id="account"></a>
 						<div class="topMainRight1All2Content">
-						<ul>
+							<ul>
 							<li><a href="#">账户设置</a></li>
 							<li><a href="#">模板设置</a></li>
-							<li><a href="#">勋章</a></li>
+							<li  class="xunzhang"><a href="#" >勋章</a></li>
 							<li><a href="#">V认证</a></li>
 							<li><a href="#">达人</a></li>
 							<li><a href="#">微号</a></li>
-							<li><a href="#">手机</a></li>
+							<li class="moblie"><a href="#">手机</a></li>
 							<li><a href="#">微博钱包</a></li>
-						</ul>
+							</ul>
 						</div>
-						
+					</li>	
 				</ul>
 				<ul class="personA">
 					<li class="personAA">
@@ -115,7 +119,6 @@
 						</ul>
 						<div class="fengexian">
 							<fieldset class="line1">
-							
 						 	</fieldset>
 						</div>
 					</div>
@@ -132,10 +135,13 @@
 							<fieldset class="line1 line2">
 								<legend class="txt">分组</legend>
 						 	</fieldset>
+						 	<div class="guanli">
+								<a><span>管理</span></a>
+							</div>
 						</div>
 						<div id="LeftAll2B">
 
-							<ul>
+							<ul class="focusS">
 								<li>
 									<a href="#" class="lev1" id="tebieguanzhu"></a>
 									<a href="#" class="lev2">特别关注</a>
@@ -184,8 +190,9 @@
 									<a href="#" class="lev2">悄悄关注</a>
 								</li>
 							</ul>
-							<div class="open hide"><a href="#">创建新分组</a></div>
-						    <div value="1" class="open opens"><a>展开</a></div>
+							<div class= "hide opens"><a href="#">创建新分组</a></div>
+						    <div class="open"><a>展开</a></div>
+						    <div class="hide opens shouqi"><a>收起</a></div>
 						</div>
 					</div>
 					<div id="LeftAll3" class="LeftAllS">
@@ -199,6 +206,7 @@
 								<a href="#" class="lev4"><img src="images/lev4/610b9925jw1dy57b3evqaj.jpg"></a>
 								<a href="#" class="lev5">应用广场</a>
 							</li>	
+
 						</ul>
 						 <ul>
 							<li>
@@ -230,9 +238,49 @@
 								<a href="#" class="lev5">痴货</a>
 							</li>	
 						</ul>
+						 <ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/16x16_img53295e709fd57.png"></a>
+								<a href="#" class="lev5">微博电影</a>
+							</li>	
+						</ul>
+						 <ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/70eb479bjw1dwdc2t9p3fj.jpg" class="gameImg"></a>
+								<a href="#" class="lev5">微博搜索</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/82ef82cbjw1dwsdbj4gpij.jpg"></a>
+								<a href="#" class="lev5">微博位置</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/62988d06jw1duu6zhk1k9j.jpg"></a>
+								<a href="#" class="lev5">名人堂</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/6e7052e5jw1eaq7741o3uj200g00g0mx.jpg"></a>
+								<a href="#" class="lev5">微音乐</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/7132aa95jw1durvwkojy3j.jpg"></a>
+								<a href="#" class="lev5">微博有书</a>
+							</li>	
+						</ul>
+						<div class="open"><a>展开</a></div>
+						<div class="hide opens shouqi"><a>收起</a></div>
+					</div>
+					<div  id="LeftAll4" class="LeftAllS">
 						<div class="fengexian">
 						 	<fieldset class="line1">
-								<legend class="txt">官方应用</legend>
+								<legend class="txt">最近使用</legend>
 						 	</fieldset>
 						</div>
 						 <ul>
@@ -271,6 +319,32 @@
 								<a href="#" class="lev5">痴货</a>
 							</li>	
 						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/82ef82cbjw1dwsdbj4gpij.jpg"></a>
+								<a href="#" class="lev5">微博位置</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/62988d06jw1duu6zhk1k9j.jpg"></a>
+								<a href="#" class="lev5">名人堂</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/6e7052e5jw1eaq7741o3uj200g00g0mx.jpg"></a>
+								<a href="#" class="lev5">微音乐</a>
+							</li>	
+						</ul>
+						<ul class="hide">
+							<li>
+								<a href="#" class="lev4"><img src="images/lev4/7132aa95jw1durvwkojy3j.jpg"></a>
+								<a href="#" class="lev5">微博有书</a>
+							</li>	
+						</ul>
+						<div class="open"><a>展开</a></div>
+						<div class="hide opens shouqi"><a>收起</a></div>
 					</div>
 				</div>
 			</div>
@@ -340,17 +414,49 @@
 								<div id="weiboTitleC">
 									<div id="search">高级搜索</div>
 									<div id="close"></div>
-									<div class="conner">
-										<div id="LiLeft">类　型：</div>
-										<div id="LiRight">
+									<div id="conner1" class="conner">
+										<div class="LiLeft">类　型：</div>
+										<div class="LiRight">
 											<span>
-												<input type="checkbox">
+												<input type="checkbox">原创
+											</span>
+											<span>
+												<input type="checkbox">转发
+											</span>
+											<span>
+												<input type="checkbox">纯文字
+											</span>
+											<span>
+												<input type="checkbox">含图片
+											</span>
+											<span>
+												<input type="checkbox">含视频
+											</span>
+											<span>
+												<input type="checkbox">含音乐
 											</span>
 										</div>
 									</div>
-									<div class="conner"></div>
-									<div class="conner"></div>
-									<div class="conner"></div>
+									<div id="conner2"  class="conner">
+										<div class="LiLeft">关键字：</div>
+										<div class="LiRight">
+											<input class="inputbox" type="text" value="查找我关注人的微博" onfocus="if(this.value=='查找我关注人的微博') {this.value=''}" onblur="if(this.value=='') {this.value='查找我关注人的微博'}">
+										</div>
+									</div>
+									<div id="conner3" class="conner">
+										<div class="LiLeft">时　间：</div>
+										<div class="LiRight">
+											<input class="inputbox1"  type="text" value="选择日期">到<input class="inputbox1"  type="text" value="2014-08-20">
+										</div>
+									</div>
+									<div class="conner">
+										<div class="LiLeft"></div>
+										<div class="LiRight">
+											<div class="buttom">
+												<span>搜索</span>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div id="weiboTitleB">
 									<div id="weiboTitleBLeft">
@@ -948,7 +1054,9 @@
 							</div>
 						</div>
 						<div class="mianRightR2">
-							<a href="#" class="change">换一换</a>
+							<div  class="change">
+								<a><span>换一换</span></a>
+							</div>
 							<form>
 								<fieldset>
 									<legend>热门话题</legend>
@@ -999,7 +1107,9 @@
 							<img src="images/TB1v4bsFVXXXXX7XXXXSutbFXXX.jpg">
 						</div>
 						<div class="mianRightR2">
-							<a href="#" class="change">换一换</a>
+							<div  class="change">
+								<a><span>换一换</span></a>
+							</div>
 							<form>
 								<fieldset>
 									<legend>可能感兴趣的人</legend>
@@ -1132,6 +1242,12 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div id="Top">
+		<span>
+			<em></em>
+			<a href="#c">返回顶部</a>
+		</span>
 	</div>
 
 	<div id="footerPic">

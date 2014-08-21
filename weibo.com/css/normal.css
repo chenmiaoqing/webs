@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-body{ width: 99%;  text-align: center; font-size: 12px; font-family: 宋体,Arial; }
+body{ width: 100%;  text-align: center; font: 12px/1.125 Arial,Helvetica,sans-serif; }
 ul,li{list-style: none; text-align: center;}
 img{border: 0;}
 a{ text-decoration: none; text-align: center;}

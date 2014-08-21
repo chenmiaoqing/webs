@@ -24,18 +24,20 @@
 .personAA{ display: block;width: 46px; height: 38px; border-bottom: 0px;border-top: 0px;}
 .personAAS{ height: 50px; background-color: #fff;border-bottom: 1px solid #fff; border-left: 1px solid rgb(51, 51, 51);border-right: 1px solid rgb(51, 51, 51); z-index: 20; }
 .personAS{ width: 42px;}
+.xunzhang{border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.moblie{border-bottom: 1px solid #e6e6e6; }
 #personImgS{width: 42px;}
 .personImg{width: 20px; height: 19px; float: right;  background-image:url("images/bg_line.png"); margin: 10px 13px 0 0; background-repeat: no-repeat;}
 #wirte{ background-position: -223px -6px; }
 #msg{ background-position: -272px -6px;}
 #account{ background-position: -346px -6px;}
 #vip{ background-position: -396px -6px;}
-.topMainRight1All2Content{ display:none; width: 150px; height: auto; background-color: #fff; border:1px solid rgb(51, 51, 51); position: absolute; top: 38px; right: -4px; *right: 0; z-index: 11;}
-.topMainRight1All2Content li{ width: 150px; height: 26px;}
+.topMainRight1All2Content{ display:none; width: 150px; padding: 10px 0 10px 0; height: auto; background-color: #fff; border:1px solid rgb(51, 51, 51); position: absolute; top: 38px; right: -4px; *right: 0; z-index: 11;}
+.topMainRight1All2Content li{  height: 26px;}
 .topMainRight1All2Content a{  text-align: left; display: block; width: 120px; *width: 150px; height: 26px; line-height: 26px; padding: 0 15px; color: rgb(51, 51, 51);}
 #header{ width: 100%; height: 3px;  background-image:url("images/bg_line.png"); background-position: 0 0;position: relative; }
 
-
+.fengexian{height: 30px;}
 
 
 
@@ -46,7 +48,7 @@
 #LeftAll{ width: 150px; height:auto;  min-height: 845px; }
 #LeftAll1{ height: 158px;}
 #LeftAll2{ height: auto;}
-#LeftAll3{ height: 400px;}
+#LeftAll3{ height: auto;}
 
 
 #xian{ width: 135px; height: 22px; border: 1px solid #ccc; margin: 10px 0 0 0;}
@@ -71,8 +73,14 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 #LeftAll2T{ height: 35px; }
 #haoyouquan{background-position: 0 -296px; }
 #tebieguanzhu{background-position: 0 -322px; }
-#LeftAll2B{ height: 232px; }
+.LeftAllS .open a,.opens a{color: #49976B; }
+.LeftAllS .open{height: 20px; margin-top: 10px; margin-left: 20px; cursor: pointer; text-align: left;}
+.LeftAllS .opens{ margin-left: 20px; cursor: pointer; text-align: left; }
+.LeftAllS .shouqi{ height: 20px; margin: 10px 0 0 20px;}
+.LeftAllS .shouqi a{color: #49976B;  }
 .open{ margin-left: 20px; cursor: pointer; text-align: left;}
+.opens{ margin-left: 20px; cursor: pointer; text-align: left; }
+.open a,.opens a{color: #49976B; }
 .hide{ display: none;}
 .LeftAllS ul{ width: 120px;height: 21px; padding-left: 20px;}
 .LeftAllS li{ height: 21px; width: 100px; display: block; margin: 3px 0px 2px 0;}
@@ -81,6 +89,26 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .lev4{ display:block; width: 16px; height: 16px; background-image: url("images/icon.png");}
 .lev5{ height: 15px; float: left;display: block;width: auto;line-height: 15px; text-align: center; padding-left: 10px;}
 .gameImg{ height: 16px; height: 16px;}
+.guanli{margin: -30px 0 0 73px; display: none; cursor: pointer;}
+.guanli a:hover{background-color:#ffad2a; border: 1px solid #ff9b01;}
+.guanli a span:hover{color: #fff;border: 1px solid #ffce82; }
+.guanli a{display: inline-block;width: 43px; height: 20px; border: 1px solid #d9d9d9; background: #f2f2f2; border-radius: 13px; }
+.guanli a span{width: 24px; height: 18px;  padding: 0 9px 0 8px; font-size: 12px; line-height: 18px; border: 1px solid #fff; border-radius: 13px; vertical-align: middle;}
+.focusS{ margin: 0 0 15px 0;}
+.focusS li{ border-bottom: 1px solid #ccc; padding: 5px 0 10px 0;}
+.focusS li a{vertical-align: middle;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #mianRight{ width: 850px; height: auto;  }
 #mainRightL{ width: 600px; height: auto; min-height: 800px; float:left;}
@@ -142,20 +170,27 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 #weiboTitleBRight i{ width: 16px;height: 16px;margin: 2px 3px 0 8px; display: block; background-image: url("images/icon.png"); background-position: -150px -50px; float: left;}
 #weiboTitleBRight a{ width: 79px; height: 28px; display: block; color: rgb(51,51,51); line-height: 20px;}
 
-#weiboTitleC{background-color: #fff;  width: 528px; height: 162px; padding: 15px; border: 1px solid #caddcb;margin-top: 10px; border-radius: 1px; }
+#weiboTitleC{display: none; width: 528px; height: 162px; padding: 15px; border: 1px solid #caddcb;margin-top: 10px; border-radius: 1px; }
 #search{color: #33463f; width: 528px; height: 13px; font-weight: 700; line-height: 1.125;margin-bottom: 6px; text-align: left;}
-#close{width: 12px; height: 12px;background-image: url("images/icon.png");background-position: -75px -25px; position: absolute;top:5px; right: 5px; }
+#close{width: 12px; height: 12px;background-image: url("images/icon.png");background-position: -75px -25px; position: absolute;top:420px; right: 460px; }
 .conner{width: 528px;margin-bottom: 10px;height: auto;}
-#LiLeft{ float: left;}
-#LiRight{ float: right;}
+.LiLeft{ float: left; line-height: 22px;}
+.LiRight{ float: left;}
+.LiRight span{display: inline-block; margin-right: 22px; line-height: 22px;}
+.LiRight input{ margin-right: 3px; vertical-align: -2px;}
+#conner1{height: 22px; }
+#conner2{ height: 30px;}
+.inputbox{ width: 184px; height: 30px;padding: 0 0 0 2px; border:1px solid #ccc;}
+#conner2 .LiLeft{ line-height: 30px;}
+#conner3{ height: 32px;}
+#conner3 .LiLeft{ line-height: 32px;}
+.inputbox1{ width: 74px; height: 30px; padding: 0 0 0 2px; border: 1px solid #ccc;}
+.buttom{width: 45px; height: 20px; border: 1px solid #d9d9d9; margin-left: 49px; border-radius: 2px;}
+.buttom span{color: #333; background-color: #f2f2f2; width: 24px; height: 18px; padding: 0 9px 0 10px;border: 1px solid #fff; line-height: 18px;}
+.buttom span:hover{ background-color: #fff;}
+.LiRight input{color: #808080; }
 
-
-
-
-
-
-
-#weiboTitleList{ width: 560px; height: 22px; margin: 0 20px 0 20px;}
+#weiboTitleList{ width: 560px; height: 22px; margin: 20px 20px 0 20px;}
 #weiboTitleList ul{width: 560px; height: 22px;}
 #weiboTitleList li{ width: 44px; height: 22px; float: left;}
 #weiboTitleList a{ width: 24px; height: 22px; padding: 0 10px; display: block; color: #49976b; line-height: 22px;}
@@ -175,15 +210,17 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .wbPic a{ display: inline; float: left;width: 80px;height: 80px; margin: 5px 0 0 5px;position: relative;}
 .wbPic li{ display: block; float: left; width: 255px;  }
 #RightCRB{ width: 495px; height: 14px; padding-top: 15px;}
+
 #RightCRB a:hover{text-decoration: underline;}
 .RightCRBLeft{ width: auto; height: 14px; float: left;}
-.RightCRBLeft  a,span{  display: block; margin-right: 7px; line-height: 14px; float: left; }
+.RightCRBLeft a,span{display: block;  line-height: 14px; float: left; }
+.RightCRBLeft span{margin: 0 7px 0 7px;}
 .RightCRBLeft a{ color:#49976B;}
 .dianzan{width: 43px;height: 13px;display: block;}
 .dianzan p{width: 28px;height: 13px;display: block;float: right;margin-right: 0px}
 .RightCRBRight{ width: 234px;  height: 14px; float: right;}
-.RightCRBRight a{ display: inline-block;line-height: 13.5px; float: left; color: #49976B;}
-.RightCRBRight span{display: inline-block;line-height: 13.5px; float: left; color: #111;}
+.RightCRBRight a{display: inline-block;line-height: 13.5px; float: left; color: #49976B;}
+.RightCRBRight span{margin: 0 7px; display: inline-block;line-height: 13.5px; float: left; color: #AEAEAE;}
 .RightCRBRight i{ width: 13px; height: 13px;line-height: 13.5px; float: left;display:inline-block; background-image: url("images/icon.png"); background-position: -75px 0;}
 .RL4CRS{ border: 1px solid #ccc;}
 .HotTitle{ width: 495px; height: 16px; padding: 10px 0 0 10px;}
@@ -215,7 +252,11 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 
 .mianRightR2{ width: 230px; height: auto;position: relative; }
 .mianRightR2 a{ display: block;  }
-.change{width: 55px; height: 20px; border-radius: 10px; color: #111; line-height: 20px; position: absolute;top: -5px;  left: 150px; border: 1px solid #d9d9d9; background-color: #f2f2f2;}
+.change{width: 62px; height: 22px;  position: absolute;top: -5px;  left: 150px; }
+.change a{display: inline-block;width: 60px; height: 20px; border: 1px solid #d9d9d9; background: #f2f2f2; border-radius: 13px; }
+.change a span{width: 50px; height: 18px;  padding: 0 4px 0 4px; font-size: 12px; line-height: 18px; border: 1px solid #fff; border-radius: 13px; vertical-align: middle;}
+.change a:hover{background-color:#ffad2a; border: 1px solid #ff9b01;}
+.change a span:hover{color: #fff;border: 1px solid #ffce82; }
 .mianRightR2 legend{  display: inline-block;padding: 1px 5px 0 5px; font-size: 14px; color: #33463f;font-weight: bold;}
 .mainRight2B{ width: 190px; height: auto; padding: 10px 20px;}
 .mainRight2BT{ width: 190px; height: 50px;}
@@ -257,6 +298,13 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .hothuati a:hover{ text-decoration: underline;}
 .hothuatiS span:hover{ text-decoration: underline;}
 .mianRightR3{ width: 230px; height: auto;position: relative; padding-bottom: 15px;}
+
+#Top{display: none; width: 22px; height: 85px; border: 1px solid #ccc; border-radius: 2px; margin-left: 490px; background-color: #f2f2f2; position: fixed; bottom: 100px; left: 50%;}
+#Top span{ width: 20px; height: 73px; padding: 10px 0 0 0; border: 1px solid #fff; cursor: pointer;}
+#Top span em{display: block;  margin-left: 4px;  background-position: -75px -100px; width: 12px; height: 12px; background-image: url("images/icon.png"); background-repeat: no-repeat;}
+#Top span a{ display: inline-block;color: #808080;font-size: 12px;}
+
+
 
 
 #footerPic{ width: 980px; height: 110px; margin: 20px auto; }

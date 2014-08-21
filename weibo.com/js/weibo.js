@@ -35,6 +35,7 @@ $(function(){
 	$("input").focus(function(){
 		$("#soso").css("border","1px solid #ffb941");
 		$("#weiboTitleBLeft").css("border","1px solid #ffb941");
+		$(this).css("border","1px solid #ffb941");
 		$("#soso a").css("background-position","-475px -3px");
 		
 		$("input").mouseout(function(){
@@ -52,6 +53,7 @@ $(function(){
 	$("input").blur(function(){
 		$("#soso").css("border","");
 		$("#weiboTitleBLeft").css("border","");
+		$(this).css("border","");
 		$("#soso a").css("background-position","-449px -3px");
 
 		
@@ -75,14 +77,84 @@ $(function(){
 	});
 
 
-	//随着滚动条变化LeftAll2固定
-	$(window).srcoll(function(){
-		var scrolls=$(this).scrollTop();
-		if(scrolls>45){
-			$("#LeftAll2").css("position","fixed");
-		}
+	// //随着滚动条变化LeftAll2固定
+	// $(window).srcoll(function(){
+	// 	var scrolls=$(this).scrollTop();
+	// 	if(scrolls>45){
+	// 		$("#LeftAll2").css("position","fixed");
+	// 	}
+	// });
+	
+
+	//日期选择器
+	$(".inputbox1").datepicker({
+		minDate: -30,
+		maxDate: 0
 	});
 	
+	//点击三角出现下拉菜单
+	$(".sanjiao").click(function(){
+		$("#weiboTitleC").show();
+		$("#weiboTitleList,#weiboTitleB").hide();
+		//$("#weiboTitleB").hide();
+	});
+	//点击关闭菜单关闭
+	$("#close").click(function(){
+		$("#weiboTitleC").hide();
+		$("#weiboTitleList,#weiboTitleB").show();
+		//$("#weiboTitleB").show();
+	});
+
+
+	$(".open").click(function(){
+		$(this).parent().find(".hide").show();
+		$(this).hide();
+	});
+	$(".shouqi").click(function(){
+		$(".hide").hide();
+		$(".open").show();
+	});
+
+
+	$(".fengexian").hover(function(){
+		$(".guanli").show();
+	},function(){
+		$(".guanli").hide();
+	});
+
+
+	$(".topMainRight1All2Content li").hover(function(){
+		
+		$(this).css("background-color","#f2f2f2");
+	},function(){
+		$(this).css("background-color","");
+	});
+
+	$(window).scroll(function(){
+		//alert("a");
+		var scrolls=$(this).scrollTop();
+		if(scrolls>5){
+			$("#Top").show();
+		}else{
+			$("#Top").hide();
+		}
+	});
+
+	$("#Top").hover(function(){
+		$("#Top span em").css("background-position","-100px -100px");
+	},function(){
+		$("#Top span em").css("background-position","-75px -100px");
+	});
+
+
+
+
+
+
+
+
+
+
 });
 
 
