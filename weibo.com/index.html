@@ -3,10 +3,12 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="js/artZoom.js"></script>
+	<script type="text/javascript">jQuery('a.artZoom').artZoom();</script>
 	<script type="text/javascript" src="js/jquery-ui-datepicker.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/weibo.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
 	<title>我的新浪首页</title>
@@ -362,7 +364,7 @@
 							</div>	
 							<div id= "mianinput">				
 							 	<div id="input">
-									<textarea id="inputT"></textarea>
+									<textarea id="inputT" class="textarea"></textarea>
 								</div>
 								<div id="arrow" ></div>	
 							</div>
@@ -546,10 +548,9 @@
 										</a>
 									</div>
 									<ul class="wbPic">
-										<li> <a href="#"><img src="images/6df20baajw1ej453u01o2j20hs0a0dgm.jpg"></a>
-											 <a href="#"><img src="images/6df20baajw1ej453uszn9j20hs0a03zg.jpg"></a>
-											 <a href="#"><img src="images/6df20baajw1ej453vq6jqj20hs0a0t9z.jpg"></a>
-										</li>			
+										 <li> <a class="miniImg artZoom" href="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg" rel="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg"><img src="images/ae9db69ajw1ejlelb1rxzj20c80md0um.jpg" /></a> 
+  										 </li>
+										
 									</ul>
 									<div id="RightCRB">
 										<div class="RightCRBLeft">
@@ -567,72 +568,11 @@
 											<span>|</span>
 											<a href="#">收藏</a>
 											<span>|</span>
-											<a class="pinglun" isshow="no">评论(90)</a>
+											<a class="pinglun" talkid="reply1" isshow="no">评论(90)</a>
 										</div>
 									</div>
-									<div class="reply">
-										<div>
-											<!-- 评论框 -->
-											<div>
-												<textarea></textarea>
-											</div>
-											<ul>
-												<li class="replyBLeft">
-													<span></span>
-													<a><input type="checkbox">同时转发到我的微博</a>
-												</li>
-												<li class="replyBRight">
-													<a><span>
-														<em>评论</em>
-													</span></a>
-												</li>
-											</ul>
-											<!-- 已有的评论列表 -->
-											<div class="replyed">
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-											</div>
-										</div>
+									<div id="replyContentreply1" class="replyContent">
+									
 									</div>
 								</div>
 							</div>
@@ -692,10 +632,11 @@
 										</a>
 									</div>
 									<ul class="wbPic">
-										<li> <a href="#"><img src="images/95c31c6egw1ej45iymwkjj21kp2dfhdt.jpg"></a>
-											 <a href="#"><img src="images/95c31c6egw1ej45itikqgj21f02df4qp.jpg"></a></li>
-										<li> <a href="#"><img src="images/95c31c6egw1ej45iys7wqj21kw195ndb.jpg"></a>
-										 	<a href="#"><img src="images/95c31c6egw1ej45izvb1uj20cg0iojso.jpg"></a></li>
+										 <li> <a class="miniImg artZoom" href="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg" rel="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg"><img src="images/ae9db69ajw1ejlelb1rxzj20c80md0um.jpg" /></a> 
+  										 </li>
+  										  <li> <a class="miniImg artZoom" href="images/Big6df20baajw1ejlf7l18l0j20h20hsdis.jpg" rel="images/Big6df20baajw1ejlf7l18l0j20h20hsdis.jpg"><img src="images/6df20baajw1ejlf7l18l0j20h20hsdis.jpg" /></a> 
+  										 </li>
+										
 									</ul>
 									<div id="RightCRB">
 										<div class="RightCRBLeft">
@@ -713,72 +654,11 @@
 											<span>|</span>
 											<a href="#">收藏</a>
 											<span>|</span>
-											<a class="pinglun" isshow="no">评论(120)</a>
+											<a class="pinglun"  talkid="reply2"  isshow="no">评论(120)</a>
 										</div>
 									</div>
-									<div class="reply">
-										<div>
-											<!-- 评论框 -->
-											<div>
-												<textarea></textarea>
-											</div>
-											<ul>
-												<li class="replyBLeft">
-													<span></span>
-													<a><input type="checkbox">同时转发到我的微博</a>
-												</li>
-												<li class="replyBRight">
-													<a><span>
-														<em>评论</em>
-													</span></a>
-												</li>
-											</ul>
-											<!-- 已有的评论列表 -->
-											<div class="replyed">
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-												<dl>
-													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
-													<dd>
-														<a>-春天藥丸-</a>：…… (11分钟前)
-														<div class="info">
-															<span>
-																<em class="hover"><a>举报</a><span>|</span></em>
-																<a><i></i></a>
-																<span>|</span>
-																<a>回复</a>
-															</span>
-														</div>        
-													</dd>
-												</dl>
-											</div>
-										</div>
+									<div id="replyContentreply2" class="replyContent">
+									
 									</div>
 								</div>
 							</div>
@@ -818,13 +698,16 @@
 											<span>|</span>
 											<a href="#">收藏</a>
 											<span>|</span>
-											<a href="#">评论(90)</a>
+											<a class="pinglun"  talkid="reply3"  isshow="no">评论(90)</a>
 										</div>
+									</div>
+									<div id="replyContentreply3" class="replyContent">
+									
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="RightL4">
+						<!-- <div class="RightL4">
 							<div class="RightL4Content">
 								<div class="RightL4CLeft">
 									<img src="images/UserHeadImages/1.jpg">
@@ -859,7 +742,7 @@
 											<span>|</span>
 											<a href="#">收藏</a>
 											<span>|</span>
-											<a  class="pinglun" isshow="no">评论(120)</a>
+											<a  class="pinglun" talkid="4" isshow="no">评论(120)</a>
 										</div>
 									</div>
 								</div>
@@ -1111,7 +994,7 @@
 								</div>
 							</div>
 						</div>
-							<div class="RightL4">
+						<div class="RightL4">
 							<div class="RightL4Content">
 								<div class="RightL4CLeft">
 									<img src="css/images/face_like.png">
@@ -1151,7 +1034,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div id="mianRightR">
@@ -1181,7 +1064,7 @@
 								</li>
 							</div>
 						</div>
-						<div class="mianRightR2">
+						<div class="mianRightR2" id="remenhuati">
 							<div  class="change">
 								<a><span>换一换</span></a>
 							</div>
@@ -1315,7 +1198,9 @@
 							</div>
 						</div>
 						<div class="mianRightR2">
-							<a href="#" class="change">换一换</a>
+							<div  class="change">
+								<a><span>换一换</span></a>
+							</div>
 							<form>
 								<fieldset>
 									<legend>热门微博</legend>
@@ -1341,7 +1226,9 @@
 							</div>	
 						</div>
 						<div class="mianRightR2">
-							<a href="#" class="change">换一换</a>
+							<div  class="change">
+								<a><span>换一换</span></a>
+							</div>
 							<form>
 								<fieldset>
 									<legend>热门歌曲</legend>
@@ -1370,15 +1257,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="Top">
-		<span>
-			<em></em>
-			<a href="#c">返回顶部</a>
-		</span>
-	</div>
-
-	<div id="footerPic">
+		<div id="footerPic">
 		<img src="images/TB1H2zCFVXXXXclXpXXSutbFXXX.jpg">
 	</div>
 
@@ -1469,6 +1348,13 @@
 				<div id="footerUlBRB"><span>Copyright © 2009-2014 WEIBO</span></div>
 			</div>
 		</div>
+	</div>
+	</div>
+	<div id="Top">
+		<span>
+			<em></em>
+			<a href="#c">返回顶部</a>
+		</span>
 	</div>
 </body>
 </html>

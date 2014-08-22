@@ -207,8 +207,8 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .txt{ width: 495px; height: auto; min-height: 23px; padding: 4px 0 4px;}
 .txt a{ display: block;line-height: 23px; font-size: 14px; text-align: left; color: #111;  }
 .wbPic{ display: inline-block; max-height: 255px; }
-.wbPic a{ display: inline; float: left;width: 80px;height: 80px; margin: 5px 0 0 5px;position: relative;}
-.wbPic li{ display: block; float: left; width: 255px;  }
+.wbPic a{ display: inline; float: left; margin: 5px 0 0 5px;position: relative;}
+.wbPic li{ display: block; float: left; width: 225px;  }
 #RightCRB{ width: 495px; height: 14px; padding-top: 15px;}
 
 #RightCRB a:hover{text-decoration: underline;}
@@ -308,7 +308,7 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 
 
 #footerPic{ width: 980px; height: 110px; margin: 20px auto; }
-#footer{ width: 940px; height: 178px; padding: 20px 20px 10px 20px; margin: 20px auto 0; border: 1px solid #ccc;}
+#footer{ width: 940px; height: 178px; padding: 20px 20px 10px 20px; margin: 20px auto 0; border: 1px solid #fff; background-color: #fff;}
 
 #footerUlT{ width: 940px; height: 85px;}
 .footerUl1{ width: 170; height: 85px; float: left;margin: 0 20px 0 0; display: inline; float: left;}
@@ -335,7 +335,8 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 #changeLanguage option{font: 12px/1.125 Arial,Helvetica,sans-serif;  font: inherit }
 
 /*回复框*/
-.reply{display: none; width: 453px; height: auto;padding: 10px 20px; border: 1px solid #caddcb; border-radius: 3px; margin-top: 10px; line-height: 20px; background-color: #FAFAFA;  }
+.replyContent{display:block; width: 453px; height:auto; }
+.reply{display: block; width: 453px; height: auto;padding: 10px 20px; border: 1px solid #caddcb; border-radius: 3px; margin-top: 10px; line-height: 20px; background-color: #FAFAFA;  }
 .reply textarea{ resize:none; width: 452px; height: 30px; padding: 5px 0 0 2px;  border: 1px solid #ccc; border-radius: 2px; color: #808080;box-shadow: 0px 1px 1px 0px #fafafa inset; font-size: 12px; line-height: 18px; overflow: hidden;outline: medium none; word-wrap:break-word; }
 .reply ul{display: inline-block; height: 30px;}
 .replyBLeft{float: left; height: 25px; padding-top: 5px; }
@@ -360,3 +361,20 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .info a{color: #49976B; display:block; float: left;}
 .info span span{ margin: 0 6px 0 8px; color: #AEAEAE; float: left;}
 .info a i{display: block; width: 13px; height: 14px; background-image: url("images/icon.png"); background-repeat: no-repeat; background-position: -75px 0; }
+
+.replySonContent{display:block;  width: 413px; height: auto;}
+.replySon{ background-color: #F2F2F2; line-height: 20px; padding: 15px 20px 13px; font-size: 12px;margin: 10px 0px 6px; border-radius: 3px; border: 1px solid #CADDCB; }
+.replySon textarea{ resize:none; width: 367px; height: 28px; padding: 5px 0 0 2px;  border: 1px solid #ccc; border-radius: 2px; color: #808080;box-shadow: 0px 1px 1px 0px #fafafa inset; font-size: 12px; line-height: 18px; overflow: hidden;outline: medium none; word-wrap:break-word; }
+.replySon ul{display: inline-block; height: 40px;}
+.replySonBLeft{float: left; height: 25px; padding-top: 5px; }
+.replySonBRight{margin-left: 300px; padding-top: 5px; }
+.replySon li{ display:block;}
+.replySonBLeft span{ display:block;width: 16px; height: 16px; background-image: url("images/icon.png");background-repeat: no-repeat; background-position:-275px 0; margin: 4px 10px 0 0; float: left;  }
+.replySonBLeft a{display: block;float: left; margin-top: 2px; }
+.replySonBLeft input{ vertical-align: -3px; margin-right: 3px;}
+.replySonBRight a{line-height: 30px; border: 1px solid #ff9b01; background-color: #ffa00a;color: #fff; border-radius: 2px; display: inline-block; cursor: pointer; }
+.replySonBRight a span{width: 28px; height: 26px; padding: 0 15px; display: inline-block; height: 26px; line-height: 26px;  border:1px solid #FFB33B; border-radius: 2px;}
+.replySonBRight a span em{ font-style: normal; font-weight: normal; font-size: 14px; color: #fff;}
+
+
+#ui-datepicker-div{ display: none;}

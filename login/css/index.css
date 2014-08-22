@@ -46,7 +46,7 @@
 
 
 .submitS{ margin: 0 5px 0 0; float: left; background-color: #F2F2F2;width: 145px; height: 28px;   border: 1px solid #D9D9D9; border-radius: 2px; }
-.InfoList .input .submitS em{font-style: normal;padding: 5px; display:block;color: #fff;font-size: 0.5px; color: #333;}
+.InfoList .input .submitS em{display: inline-block;height: 28px; font-style: normal;padding: 5px; display:block;color: #fff;font-size: 0.5px; color: #333;}
 .InfoList .submitS  a{width: 143px; height: 26px; display: block;border: 1px solid #Fff; }
 .InfoList .guojia a{width: 27px; height: 13px; padding: 8px 4px; border: 1px solid #ccc; border-right: 0px; background-image: url("images/reg_flag.png"); background-position:4px 8px; background-repeat: no-repeat;}
 #menula{display: none; width: 120px; height: 225px; padding: 1px; border: 1px solid #ccc; position: absolute;top: 366px;left: 410px; z-index: 99; background-color: #fff; }
@@ -71,6 +71,7 @@
 .submit{ display: inline-block; background-color: #FFA00A;border: 1px solid #ff9b01; border-radius: 2px; }
 .submit span{ display:block;font-weight: bold;text-align: center;color: #fff; padding: 10px 0 8px 0;font-size: 10px;}
 .submitaa{width: 200px; height: 40px;  }
+.submitaa span{font-style: normal;font-weight: normal;font-size: 16px;}
 .submit a{display: block;border: 1px solid #ffb33b;}
 .content2{ width: 440px; height: 53px; margin-left: 160px; }
 .content2 a{display: block; color: #0a8cd2; margin-bottom: 5px;}

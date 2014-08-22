@@ -1,0 +1,17 @@
+<div class="replySon">
+															<div>
+																<textarea></textarea>
+																<ul>
+																	<li class="replySonBLeft">
+																	<span></span>
+																	<a><input type="checkbox">同时转发到我的微博</a>
+																	</li>
+																	<li class="replySonBRight">
+																	<a><span>
+																		<em>评论</em>
+																		</span></a>
+																	</li>
+																</ul>
+
+															</div>
+														</div>     

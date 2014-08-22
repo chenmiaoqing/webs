@@ -1,0 +1,64 @@
+<div class="reply">
+										<div>
+											<!-- 评论框 -->
+											<div>
+												<textarea></textarea>
+											</div>
+											<ul>
+												<li class="replyBLeft">
+													<span></span>
+													<a><input type="checkbox">同时转发到我的微博</a>
+												</li>
+												<li class="replyBRight">
+													<a><span>
+														<em>评论</em>
+													</span></a>
+												</li>
+											</ul>
+											<!-- 已有的评论列表 -->
+											<div class="replyed">
+												<dl>
+													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
+													<dd>
+														<a>-春天藥丸-</a>：…… (11分钟前)
+														<div class="info">
+															<span>
+																<em class="hover"><a>举报</a><span>|</span></em>
+																<a><i></i></a>
+																<span>|</span>
+																<a>回复</a>
+															</span>
+														</div>        
+													</dd>
+												</dl>
+												<dl>
+													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
+													<dd>
+														<a>-春天藥丸-</a>：…… (11分钟前)
+														<div class="info">
+															<span>
+																<em class="hover"><a>举报</a><span>|</span></em>
+																<a><i></i></a>
+																<span>|</span>
+																<a>回复</a>
+															</span>
+														</div>        
+													</dd>
+												</dl>
+												<dl>
+													<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>
+													<dd>
+														<a>-春天藥丸-</a>：…… (11分钟前)
+														<div class="info">
+															<span>
+																<em class="hover"><a>举报</a><span>|</span></em>
+																<a><i></i></a>
+																<span>|</span>
+																<a>回复</a>
+															</span>
+														</div>        
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
