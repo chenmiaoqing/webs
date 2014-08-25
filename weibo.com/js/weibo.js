@@ -186,11 +186,36 @@ $(function(){
 		tijiao($(this));
 	});
 
-
+	$(document).on("click",".replySonBRight",function(){
+		tijiaoson($(this));
+	});
 	reply();
 
-	
-	
+	//点赞
+	$(".dianzan").click(function(){
+
+		var iszan=$(this).attr("iszan");
+		//alert(iszan);
+		if(iszan=="no"){
+
+			var zanNum=$(this).find(".zanNum").html();
+			//alert(zanNum);
+			zanNum++;
+			$(this).find(".zanNum").html(zanNum);
+			$(".dianzan i").css("background-position","-100px 0");
+			$(this).attr("iszan","yes");
+		}else{
+			var zanNum=$(this).find(".zanNum").html();
+			//alert(zanNum);
+			zanNum--;
+			$(this).find(".zanNum").html(zanNum);
+			$(".dianzan i").css("background-position","-75px 0");
+			$(this).attr("iszan","no");
+		}
+	});
+
+	//转发
+	zhuanfa();
 
 });
 
@@ -332,6 +357,12 @@ function tijiao(t){
 
 		
 		 $(".replyed").append(replyContentHtml);
+		 $(".replyed dl").hover(function(){
+					//alert("b");
+					$(this).find(".hover").css("opacity","1");
+				},function(){
+					$(this).find(".hover").css("opacity","0");
+				});
 		
 }
 
@@ -352,7 +383,7 @@ function replySon(e){
 					var replySonA='';
 					 replySonA	+='<div class="replySon" id="'+ talkSonid +'"  iscunzai="yes">';
 					 replySonA	+='		<div>';
-					 replySonA	+='	 		<textarea class="textarea"></textarea>';
+					 replySonA	+='	 		<textarea class="textarea" id="sp_2"></textarea>';
 					 replySonA	+='			<ul>';
 					 replySonA	+='				<li class="replySonBLeft">';
 					 replySonA	+='					<span></span>';
@@ -380,7 +411,94 @@ function replySon(e){
 		
 
 
-	}
+}
+
+function zhuanfa(){
+	
+	$(".zhuanfaA").click(function(){
+			$(".bg").show();
+
+	
+	var zhuanfaHTML='';
+	
+	zhuanfaHTML	+='<div class="zhuanfa">';
+	zhuanfaHTML	+='	<div class="zhuanfatitle"><span>转发微博</span>';
+	zhuanfaHTML	+='		<a class="guanbi"></a>';
+	zhuanfaHTML	+='	</div>';
+	zhuanfaHTML	+='	<div class="zhuanfatitle1">';
+	zhuanfaHTML	+='		<ul>';
+	zhuanfaHTML	+='			<li>转发到</li>';
+	zhuanfaHTML	+='			<li><a>我的微博</a></li>';
+	zhuanfaHTML	+='			<li><a>朋友圈</a></li>';
+	zhuanfaHTML	+='			<li><a>私信</a></li>';
+	zhuanfaHTML	+='		</ul>';
+	zhuanfaHTML	+='	</div>';
+	zhuanfaHTML +='	<div class="zhuanfatitiel3">';
+	zhuanfaHTML +='		<div class="zftitle31">';
+	zhuanfaHTML +='			<a>@万达电影生活</a>:#新片抢鲜#哈利波特系列电影虽已完结，但魔法...';
+	zhuanfaHTML +='		</div>';
+	zhuanfaHTML +='		<div class="reply " id="zhuanfakuang">';
+	zhuanfaHTML +='			<div>	';
+	zhuanfaHTML +='				<div>';
+	zhuanfaHTML +='					<textarea></textarea>';
+	zhuanfaHTML +='				</div>';
+	zhuanfaHTML +='				<ul>';
+	zhuanfaHTML +='					<li class="replyBLeft">';
+	zhuanfaHTML +='						<span></span>';
+	zhuanfaHTML +='						<a><input type="checkbox">同时评论给</a><a class="beizhuanfaderen">万达电影生活</a>';
+	zhuanfaHTML +='					</li>';
+	zhuanfaHTML +='					<li class="replyBRight">';
+	zhuanfaHTML +='						<a><span>';
+	zhuanfaHTML +='							<em>转发</em>';
+	zhuanfaHTML +='							</span></a>';
+	zhuanfaHTML +='					</li>';
+	zhuanfaHTML +='				</ul>';
+	zhuanfaHTML +='			</div>';
+	zhuanfaHTML +='	 	</div>';
+	zhuanfaHTML +='</div>';
+
+
+		$(".bg").append(zhuanfaHTML);
+
+
+	});
+}
 
 
 
+function tijiaoson(tt){
+	//alert("tt");
+		var replysonContentHtml ="";
+		var sp_2=document.getElementById("sp_2");
+		var MyWords=sp_2.value;
+		//alert(MyWords);
+		
+		replysonContentHtml +='				<dl>';
+		replysonContentHtml +='					<dt><a><img src="images/UserHeadImages/4.jpg" class="replyImg"></a></dt>';
+		replysonContentHtml +='					<dd>';
+		replysonContentHtml +='						<a>茉香半糖</a>回复<a>@-春天藥丸-</a>：'+ MyWords+' ';
+		replysonContentHtml +='						<div class="info">';
+		replysonContentHtml +='							<span>';
+		replysonContentHtml +='								<em class="hover"><a>举报</a><span>|</span></em>';
+		replysonContentHtml +='								<a><i></i></a>';
+		replysonContentHtml +='								<span>|</span>';
+		replysonContentHtml +='								<a class="huifu" isshow="no" talkSonid="son1">回复</a>';
+		replysonContentHtml +='							</span>';
+		replysonContentHtml +='						 </div>  ';
+		replysonContentHtml +='						 <div class="replySonContent" id="replySonContentson1">'
+		replysonContentHtml +='						</div>'
+		replysonContentHtml +='					</dd>';
+		replysonContentHtml +='				</dl>';
+		//alert(replysonContentHtml);
+
+		
+		 $(".replyed").append(replysonContentHtml);
+		 $(".replySonContent").hide();
+
+		 $(".replyed dl").hover(function(){
+					$(this).find(".hover").css("opacity","1");
+				},function(){
+					$(this).find(".hover").css("opacity","0");
+				});
+		
+}
