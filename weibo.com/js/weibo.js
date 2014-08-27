@@ -179,9 +179,13 @@ $(function(){
 	// 	}	
 	// });
 
+	//弹出回复框
+	reply();
+	//弹出回复的回复框
 	$(document).on("click",".huifu",function(){
 		replySon($(this));
 	});
+	//在回复框中提交评论
 	$(document).on("click",".replyBRight",function(){
 		tijiao($(this));
 	});
@@ -189,11 +193,13 @@ $(function(){
 	$(document).on("click",".replySonBRight",function(){
 		tijiaoson($(this));
 	});
-	reply();
+	
+
+	faweibo();
 
 	//点赞
 	$(".dianzan").click(function(){
-
+		alert("a");
 		var iszan=$(this).attr("iszan");
 		//alert(iszan);
 		if(iszan=="no"){
@@ -219,7 +225,7 @@ $(function(){
 
 });
 
-
+//弹出回复框
 function reply(){
 
 	
@@ -285,7 +291,7 @@ function reply(){
 				replyA +='				<dl>';
 				replyA +='					<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>';
 				replyA +='					<dd>';
-				replyA +='						<a>-春天藥丸-</a>：…… (11分钟前)';
+				replyA +='						<a>鼻息肉</a>：哈哈 (11分钟前)';
 				replyA +='						<div class="info">';
 				replyA +='							<span>';
 				replyA +='								<em class="hover"><a>举报</a><span>|</span></em>';
@@ -331,6 +337,7 @@ function reply(){
 
 }
 
+//回复的内容出现在已回复的内容中
 function tijiao(t){
 		var replyContentHtml ="";
 		var sp_1=document.getElementById("sp_1");
@@ -366,17 +373,20 @@ function tijiao(t){
 		
 }
 
+//弹出回复的回复框
 function replySon(e){
 	
 			var talkSonid=e.attr("talkSonid");
 			var isshow=e.attr("isshow");
 			if(isshow=="no"){
 				
+				//$("#"+talkSonid).empty();
 				
 				var isshown=e.attr("iscunzai");
 
 				if(isshown!=null){
 					$("#"+talkSonid).show();
+
 				}
 				else
 				{ 
@@ -399,20 +409,16 @@ function replySon(e){
 					 replySonA	+='</div>   ';
 					
 					 $("#replySonContent"+talkSonid).append(replySonA);
-
-
-
 				}
 				e.attr("isshow","yes");
 			}else{
-				$("#"+talkSonid).hide();
+				e.parent().parent().next().find("#"+talkSonid).hide();
 				e.attr("isshow","no");
 			}
 		
-
-
 }
 
+//转发内容出现在列表中
 function zhuanfa(){
 	
 	$(".zhuanfaA").click(function(){
@@ -465,7 +471,7 @@ function zhuanfa(){
 }
 
 
-
+//回复的回复出现在已回复的内容中
 function tijiaoson(tt){
 	//alert("tt");
 		var replysonContentHtml ="";

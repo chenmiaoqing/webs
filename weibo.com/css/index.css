@@ -355,7 +355,7 @@ fieldset{ border-style: solid; border-width: 1px 0 0 0;}
 .replyImg{display: block; width: 30px; height: 30px;}
 .replyed dd{ margin: 0 0 0 40px; line-height: 21px; word-wrap:break-word; vertical-align: text-bottom;}
 .replyed dd a{color: #49976B;}
-.info{ text-align: right;padding: 5px 0 0 0 ;line-height: 15px; overflow: hidden; margin-left: 300px;}
+.info{ text-align: right;padding: 5px 0 0 0 ;line-height: 15px; overflow: hidden; margin-left: 200px;}
 .hover{opacity: 0; padding: 0 6px 0 8px; float: left;font-style: normal;font-weight: normal; display: block;}
 .hover a:hover{text-decoration: underline;}
 .info a{color: #49976B; display:block; float: left;}
