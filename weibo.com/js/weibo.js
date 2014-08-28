@@ -178,28 +178,35 @@ $(function(){
 	// 		$(this).attr("isshow","no");
 	// 	}	
 	// });
-
+	
 	//弹出回复框
-	reply();
+	$(document).on("click",".pinglun",function(){
+			reply($(this));
+	});
+
 	//弹出回复的回复框
 	$(document).on("click",".huifu",function(){
 		replySon($(this));
 	});
-	//在回复框中提交评论
+	//评论
 	$(document).on("click",".replyBRight",function(){
 		tijiao($(this));
+		
 	});
 
+	//评论的评论
 	$(document).on("click",".replySonBRight",function(){
 		tijiaoson($(this));
 	});
+
 	
 
-	faweibo();
 
 	//点赞
-	$(".dianzan").click(function(){
-		alert("a");
+	$(document).on("click",".dianzan",function(){
+
+		//$(".dianzan").click(function(){
+
 		var iszan=$(this).attr("iszan");
 		//alert(iszan);
 		if(iszan=="no"){
@@ -208,31 +215,108 @@ $(function(){
 			//alert(zanNum);
 			zanNum++;
 			$(this).find(".zanNum").html(zanNum);
-			$(".dianzan i").css("background-position","-100px 0");
+			$(this).find(".dianzan,i").css("background-position","-100px 0");
 			$(this).attr("iszan","yes");
 		}else{
 			var zanNum=$(this).find(".zanNum").html();
 			//alert(zanNum);
 			zanNum--;
-			$(this).find(".zanNum").html(zanNum);
-			$(".dianzan i").css("background-position","-75px 0");
+			$(this).children(".zanNum").html(zanNum);
+			$(this).find(".dianzan,i").css("background-position","-75px 0");
 			$(this).attr("iszan","no");
 		}
+	//});
 	});
+	
 
 	//转发
-	zhuanfa();
+	$(document).on("click",".zhuanfaA",function(){
+		zhuanfa($(this));
+	});
+	
+	//转发关闭
+	$(document).on("click",".guanbi",function(){
+		$("#zhuanfa").hide();
+		$(".bg").hide();
+
+	});
+
+	//转发到
+	$(document).on("click","#zhuanfaBtn",function(){
+		zhuanfadao($(this));
+	});
+	
+	//发微博
+	faweibo();
 
 });
 
-//弹出回复框
-function reply(){
+
+//发微博
+function faweibo(){
+
+	$("#replyRR").click(function(){
+		//alert("a");
+		var inputT=document.getElementById("inputT");
+		var Myweibo=inputT.value;
+		//alert(Myweibo);
+
+		var MyweiboContent ="";
+			MyweiboContent +='<div class="RightL4">';
+			MyweiboContent +='	<div class="RightL4Content">';
+			MyweiboContent +='		<div class="RightL4CLeft">';
+			MyweiboContent +='			<img src="images/UserHeadImages/4.jpg">';
+			MyweiboContent +='		</div>';
+			MyweiboContent +='		<div class="RightL4CRight">';
+			MyweiboContent +='			<div class="Name">';
+			MyweiboContent +='				<a href="#">茉香半糖</a>';
+			MyweiboContent +='			</div>';
+			MyweiboContent +='			<div class="txt">';
+			MyweiboContent +='				<a href="#">'+Myweibo+'</a>';
+			MyweiboContent +='			</div>';
+			MyweiboContent +='			<ul class="wbPic">';
+			MyweiboContent +='			</ul>';
+			MyweiboContent +='			<div id="RightCRB">';
+			MyweiboContent +='				<div class="RightCRBLeft">';
+			MyweiboContent +='					<a href="#">30秒前</a>';
+			MyweiboContent +='					<span>来自</span>';
+			MyweiboContent +='					<a href="#">iphone客户端</a>';
+			MyweiboContent +='				</div>';
+			MyweiboContent +='				<div class="RightCRBRight">';
+			MyweiboContent +='					<a class="dianzan" iszan="no">';
+			MyweiboContent +='						<i></i>(<em class="zanNum">52</em>)';
+			MyweiboContent +='					</a>';
+			MyweiboContent +='					<span>|</span>';
+			MyweiboContent +='					<a class="zhuanfaA">转发(145)</a>';
+			MyweiboContent +='					<span>|</span>';
+			MyweiboContent +='					<a href="#">收藏</a>';
+			MyweiboContent +='					<span>|</span>';
+			MyweiboContent +='					<a class="pinglun" talkid="reply1" isshow="no">评论(90)</a>';
+			MyweiboContent +='				</div>';
+			MyweiboContent +='			</div>';
+			MyweiboContent +='			<div id="replyContentreply1" class="replyContent">';
+			MyweiboContent +='			</div>';
+			MyweiboContent +='		</div>';
+			MyweiboContent +='	</div>';
+			MyweiboContent +='</div>';
+
+
+			$(".zhengwen").prepend(MyweiboContent);
+
+			$(this).parent().parent().parent().find("#inputT").attr("value"," ");
+	});
+
+}
+
+
+//弹出回复的框
+function reply(r){
 
 	
 
-	$(".pinglun").click(function(){
-		var talkid=$(this).attr("talkid");
-		var isshow=$(this).attr("isshow");	
+	// $(".pinglun").click(function(){
+		var talkid=r.attr("talkid");
+		var isshow=r.attr("isshow");	
 		if(isshow=="no"){
 			
 			// $(this).parent().parent().next(".reply").show();
@@ -275,7 +359,7 @@ function reply(){
 				replyA +='				<dl>';
 				replyA +='					<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>';
 				replyA +='					<dd>';
-				replyA +='						<a>-春天藥丸-</a>：…… (11分钟前)';
+				replyA +='						<a class="peple">-春天藥丸-</a>：…… (11分钟前)';
 				replyA +='						<div class="info">';
 				replyA +='							<span>';
 				replyA +='								<em class="hover"><a>举报</a><span>|</span></em>';
@@ -291,7 +375,7 @@ function reply(){
 				replyA +='				<dl>';
 				replyA +='					<dt><a><img src="images/UserHeadImages/3.jpg" class="replyImg"></a></dt>';
 				replyA +='					<dd>';
-				replyA +='						<a>鼻息肉</a>：哈哈 (11分钟前)';
+				replyA +='						<a  class="peple">鼻息肉</a>：…… (11分钟前)';
 				replyA +='						<div class="info">';
 				replyA +='							<span>';
 				replyA +='								<em class="hover"><a>举报</a><span>|</span></em>';
@@ -312,16 +396,16 @@ function reply(){
 				$("#replyContent"+talkid).append(replyA);
 				$(".replyed dl").hover(function(){
 					//alert("b");
-					$(this).find(".hover").css("opacity","1");
+					r.find(".hover").css("opacity","1");
 				},function(){
-					$(this).find(".hover").css("opacity","0");
+					r.find(".hover").css("opacity","0");
 				});
 			}
 			
 			
 			
 
-		$(this).attr("isshow","yes");
+		r.attr("isshow","yes");
 
 	}
 
@@ -329,15 +413,15 @@ function reply(){
 		else{
 			// $(this).parent().parent().next(".reply").hide();
 			$("#"+talkid).hide();
-			$(this).attr("isshow","no");
+			r.attr("isshow","no");
 		}	
 
-	});
+	// });
 
 
 }
 
-//回复的内容出现在已回复的内容中
+//提交回复的内容
 function tijiao(t){
 		var replyContentHtml ="";
 		var sp_1=document.getElementById("sp_1");
@@ -347,16 +431,16 @@ function tijiao(t){
 		replyContentHtml +='				<dl>';
 		replyContentHtml +='					<dt><a><img src="images/UserHeadImages/4.jpg" class="replyImg"></a></dt>';
 		replyContentHtml +='					<dd>';
-		replyContentHtml +='						<a>茉香半糖</a>：'+ MyWords+' ';
+		replyContentHtml +='						<a  class="peple">茉香半糖</a>：'+ MyWords+' ';
 		replyContentHtml +='						<div class="info">';
 		replyContentHtml +='							<span>';
 		replyContentHtml +='								<em class="hover"><a>举报</a><span>|</span></em>';
 		replyContentHtml +='								<a><i></i></a>';
 		replyContentHtml +='								<span>|</span>';
-		replyContentHtml +='								<a class="huifu" isshow="no" talkSonid="son1">回复</a>';
+		replyContentHtml +='								<a class="huifu" isshow="no" talkSonid="son3">回复</a>';
 		replyContentHtml +='							</span>';
 		replyContentHtml +='						 </div>  ';
-		replyContentHtml +='						 <div class="replySonContent" id="replySonContentson1">'
+		replyContentHtml +='						 <div class="replySonContent" id="replySonContentson3">'
 		replyContentHtml +='						</div>'
 		replyContentHtml +='					</dd>';
 		replyContentHtml +='				</dl>';
@@ -370,23 +454,22 @@ function tijiao(t){
 				},function(){
 					$(this).find(".hover").css("opacity","0");
 				});
+		t.parent().parent().find(".textarea").attr("value"," ");
 		
 }
 
-//弹出回复的回复框
+//弹出回复的回复的框
 function replySon(e){
 	
 			var talkSonid=e.attr("talkSonid");
 			var isshow=e.attr("isshow");
 			if(isshow=="no"){
 				
-				//$("#"+talkSonid).empty();
 				
 				var isshown=e.attr("iscunzai");
 
 				if(isshown!=null){
 					$("#"+talkSonid).show();
-
 				}
 				else
 				{ 
@@ -409,6 +492,9 @@ function replySon(e){
 					 replySonA	+='</div>   ';
 					
 					 $("#replySonContent"+talkSonid).append(replySonA);
+
+
+
 				}
 				e.attr("isshow","yes");
 			}else{
@@ -418,71 +504,21 @@ function replySon(e){
 		
 }
 
-//转发内容出现在列表中
-function zhuanfa(){
-	
-	$(".zhuanfaA").click(function(){
-			$(".bg").show();
 
-	
-	var zhuanfaHTML='';
-	
-	zhuanfaHTML	+='<div class="zhuanfa">';
-	zhuanfaHTML	+='	<div class="zhuanfatitle"><span>转发微博</span>';
-	zhuanfaHTML	+='		<a class="guanbi"></a>';
-	zhuanfaHTML	+='	</div>';
-	zhuanfaHTML	+='	<div class="zhuanfatitle1">';
-	zhuanfaHTML	+='		<ul>';
-	zhuanfaHTML	+='			<li>转发到</li>';
-	zhuanfaHTML	+='			<li><a>我的微博</a></li>';
-	zhuanfaHTML	+='			<li><a>朋友圈</a></li>';
-	zhuanfaHTML	+='			<li><a>私信</a></li>';
-	zhuanfaHTML	+='		</ul>';
-	zhuanfaHTML	+='	</div>';
-	zhuanfaHTML +='	<div class="zhuanfatitiel3">';
-	zhuanfaHTML +='		<div class="zftitle31">';
-	zhuanfaHTML +='			<a>@万达电影生活</a>:#新片抢鲜#哈利波特系列电影虽已完结，但魔法...';
-	zhuanfaHTML +='		</div>';
-	zhuanfaHTML +='		<div class="reply " id="zhuanfakuang">';
-	zhuanfaHTML +='			<div>	';
-	zhuanfaHTML +='				<div>';
-	zhuanfaHTML +='					<textarea></textarea>';
-	zhuanfaHTML +='				</div>';
-	zhuanfaHTML +='				<ul>';
-	zhuanfaHTML +='					<li class="replyBLeft">';
-	zhuanfaHTML +='						<span></span>';
-	zhuanfaHTML +='						<a><input type="checkbox">同时评论给</a><a class="beizhuanfaderen">万达电影生活</a>';
-	zhuanfaHTML +='					</li>';
-	zhuanfaHTML +='					<li class="replyBRight">';
-	zhuanfaHTML +='						<a><span>';
-	zhuanfaHTML +='							<em>转发</em>';
-	zhuanfaHTML +='							</span></a>';
-	zhuanfaHTML +='					</li>';
-	zhuanfaHTML +='				</ul>';
-	zhuanfaHTML +='			</div>';
-	zhuanfaHTML +='	 	</div>';
-	zhuanfaHTML +='</div>';
-
-
-		$(".bg").append(zhuanfaHTML);
-
-
-	});
-}
-
-
-//回复的回复出现在已回复的内容中
+//提交回复的回复的内容
 function tijiaoson(tt){
 	//alert("tt");
 		var replysonContentHtml ="";
 		var sp_2=document.getElementById("sp_2");
 		var MyWords=sp_2.value;
+
+		var huifuderen=tt.parent().parent().parent().parent().parent().parent().find(".peple").html();
 		//alert(MyWords);
 		
 		replysonContentHtml +='				<dl>';
 		replysonContentHtml +='					<dt><a><img src="images/UserHeadImages/4.jpg" class="replyImg"></a></dt>';
 		replysonContentHtml +='					<dd>';
-		replysonContentHtml +='						<a>茉香半糖</a>回复<a>@-春天藥丸-</a>：'+ MyWords+' ';
+		replysonContentHtml +='						<a>茉香半糖</a>回复<a>'+huifuderen+'</a>：'+ MyWords+' ';
 		replysonContentHtml +='						<div class="info">';
 		replysonContentHtml +='							<span>';
 		replysonContentHtml +='								<em class="hover"><a>举报</a><span>|</span></em>';
@@ -499,12 +535,142 @@ function tijiaoson(tt){
 
 		
 		 $(".replyed").append(replysonContentHtml);
-		 $(".replySonContent").hide();
+		$(".replySon").hide();
+		tt.parent().parent().parent().parent().prev().find(".huifu").attr("isshow","no");
 
 		 $(".replyed dl").hover(function(){
 					$(this).find(".hover").css("opacity","1");
 				},function(){
 					$(this).find(".hover").css("opacity","0");
 				});
-		
+		tt.parent().parent().find(".textarea").attr("value"," ");
+}
+
+
+//弹出转发框
+function zhuanfa(z){
+	
+	
+		$(".bg").show();
+
+			var zhuanfaderen=z.parent().parent().parent().find(".Name a").html();
+			
+			//alert(zhuanfaderen);
+
+			var zhuanfadeneirong=z.parent().parent().parent().find(".txt a").html();
+
+			//alert(zhuanfadeneirong);
+
+			var zhuanfaHTML='';
+				zhuanfaHTML	+='<div id="zhuanfa">';
+				zhuanfaHTML	+='	<div class="zhuanfatitle"><span>转发微博</span>';
+				zhuanfaHTML	+='		<a class="guanbi"></a>';
+				zhuanfaHTML	+='	</div>';
+				zhuanfaHTML	+='	<div class="zhuanfatitle1">';
+				zhuanfaHTML	+='		<ul>';
+				zhuanfaHTML	+='			<li id="zftitle11">转发到</li>';
+				zhuanfaHTML	+='			<li id="zftitle12"><a>我的微博</a></li>';
+				zhuanfaHTML	+='			<li id="zftitle13"><a>朋友圈</a></li>';
+				zhuanfaHTML	+='			<li id="zftitle14"><a>私信</a></li>';
+				zhuanfaHTML	+='		</ul>';
+				zhuanfaHTML	+='	</div>';
+				zhuanfaHTML +='	<div class="zhuanfatitiel3">';
+				zhuanfaHTML +='		<div class="zftitle31">';
+				zhuanfaHTML +='			<a>@'+zhuanfaderen+'</a>:'+zhuanfadeneirong+'';
+				zhuanfaHTML +='		</div>';
+				zhuanfaHTML +='		<div class="reply " id="zhuanfakuang">';
+				zhuanfaHTML +='			<div>	';
+				zhuanfaHTML +='				<div>';
+				zhuanfaHTML +='					<textarea id="zfdehua"></textarea>';
+				zhuanfaHTML +='				</div>';
+				zhuanfaHTML +='				<ul>';
+				zhuanfaHTML +='					<li class="replyBLeft">';
+				zhuanfaHTML +='						<span></span>';
+				zhuanfaHTML +='						<a><input type="checkbox">同时评论给</a><a class="beizhuanfaderen">'+zhuanfaderen+'</a>';
+				zhuanfaHTML +='					</li>';
+				zhuanfaHTML +='					<li id="zhuanfaBtn">';
+				zhuanfaHTML +='						<a><span>';
+				zhuanfaHTML +='							<em>转发</em>';
+				zhuanfaHTML +='							</span></a>';
+				zhuanfaHTML +='					</li>';
+				zhuanfaHTML +='				</ul>';
+				zhuanfaHTML +='			</div>';
+				zhuanfaHTML +='	 	</div>';
+				zhuanfaHTML +='</div>';
+
+
+		$(".bg").append(zhuanfaHTML);	
+}
+
+//转发到正文
+function zhuanfadao(zz){
+
+	
+	$(".bg").hide();
+
+	var zfdehua=document.getElementById("zfdehua")
+	var zfMyweibo=zfdehua.value;
+	alert(zfMyweibo);
+	var zfMyweiboContent ="";
+			zfMyweiboContent +='<div class="RightL4">';
+			zfMyweiboContent +='	<div class="RightL4Content">';
+			zfMyweiboContent +='		<div class="RightL4CLeft">';
+			zfMyweiboContent +='			<img src="images/UserHeadImages/4.jpg">';
+			zfMyweiboContent +='		</div>';
+			zfMyweiboContent +='		<div class="RightL4CRight">';
+			zfMyweiboContent +='			<div class="Name">';
+			zfMyweiboContent +='				<a href="#">茉香半糖</a>';
+			zfMyweiboContent +='			</div>';
+			zfMyweiboContent +='			<div class="txt">';
+			zfMyweiboContent +='				<a href="#">'+zfMyweibo+'</a>';//alert("a");
+			zfMyweiboContent +='			</div>';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='';
+			zfMyweiboContent +='			<div id="RightCRB">';
+			zfMyweiboContent +='				<div class="RightCRBLeft">';
+			zfMyweiboContent +='					<a href="#">30秒前</a>';
+			zfMyweiboContent +='					<span>来自</span>';
+			zfMyweiboContent +='					<a href="#">iphone客户端</a>';
+			zfMyweiboContent +='				</div>';
+			zfMyweiboContent +='				<div class="RightCRBRight">';
+			zfMyweiboContent +='					<a class="dianzan" iszan="no">';
+			zfMyweiboContent +='					<a class="dianzan" iszan="no">';
+			zfMyweiboContent +='						<i></i>(<em class="zanNum">52</em>)';
+			zfMyweiboContent +='					</a>';
+			zfMyweiboContent +='					<span>|</span>';
+			zfMyweiboContent +='					<a class="zhuanfaA">转发(145)</a>';
+			zfMyweiboContent +='					<span>|</span>';
+			zfMyweiboContent +='					<a href="#">收藏</a>';
+			zfMyweiboContent +='					<span>|</span>';
+			zfMyweiboContent +='					<a class="pinglun" talkid="reply1" isshow="no">评论(90)</a>';
+			zfMyweiboContent +='				</div>';
+			zfMyweiboContent +='			</div>';
+			zfMyweiboContent +='			<div id="replyContentreply1" class="replyContent">';
+			zfMyweiboContent +='			</div>';
+			zfMyweiboContent +='		</div>';
+			zfMyweiboContent +='	</div>';
+			zfMyweiboContent +='</div>';
+
+
+			$(".zhengwen").prepend(zfMyweiboContent);
+
 }

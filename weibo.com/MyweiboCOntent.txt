@@ -1,0 +1,43 @@
+	<div class="RightL4">
+							<div class="RightL4Content">
+								<div class="RightL4CLeft">
+									<img src="images/UserHeadImages/0.jpg">
+								</div>
+								<div class="RightL4CRight">
+									<div class="Name">
+										<a href="#">姚慧shirley</a>
+									</div>
+									<div class="txt">
+										<a href="#">长了颗痘！位置那是极好啊！！！
+										</a>
+									</div>
+									<ul class="wbPic">
+										 <li> 											<a class="miniImg artZoom" 											href="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg" 											rel="images/Bigae9db69ajw1ejlelb1rxzj20c80md0um.jpg"><img 											src="images/ae9db69ajw1ejlelb1rxzj20c80md0um.jpg" /></a> 
+  										 										</li>
+										
+									</ul>
+									<div id="RightCRB">
+										<div class="RightCRBLeft">
+											<a href="#">30秒前</a>
+											<span>来自</span>
+											<a href="#">iphone客户端</a>
+										</div>
+										<div class="RightCRBRight">
+											<a class="dianzan" iszan="no">
+																																<i></i>(<em class="zanNum">52</em>)
+
+																																</a>
+																																<span>|</span>
+																																<a class="zhuanfaA">转发(145)</a>
+																																<span>|</span>
+																																<a href="#">收藏</a>
+																																<span>|</span>
+																																<a class="pinglun" talkid="reply1" isshow="no">评论(90)</a>
+																				</div>
+									</div>
+									<div id="replyContentreply1" class="replyContent">
+									
+									</div>
+								</div>
+							</div>
+						</div>
