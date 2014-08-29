@@ -1,5 +1,5 @@
-#header{width: 100%;min-width: 1366px;height: 66px;}
-#Content{width: 100%;min-width: 1364px;height: 576px;}
+#header{width: 1366px;height: 66px;}
+#Content{width:1366px; height: 566px; }
 .logo{width: 440px;height: 60px;float: left;}
 .topbg{width: 350px;height: 66px;float: right; background-image: url("../images/top_bg104473.jpg");}
 .logo img{width: 215px;height: 60px;float: left;}
@@ -24,12 +24,15 @@
 
 
 /*左边列表*/
-#ContentLeft{width: 178px; height: 596px;float: left;border-left: 1px solid #b0bac6;}
+.overflow{ width: 1184px; height: 552px; overflow: auto;  overflow-x:hidden; }
+#ContentLeft{width: 178px; height: 566px;border-left: 1px solid #b0bac6; float: left; overflow-y:hidden; }
+#ContentRight:after{ width: 0; height: 0; clear: both; visibility: hidden; content: "."; display: block;}
 input:checked
 { 
 background-color: #ff0000;
 }
-#ContentRight{width: 1175px;height:600px;float: left;padding-top: 10px; overflow: auto;  }
+#ContentRight{width: 1184px; height: 552px;  float: left;  }
+
 .Topline{width: 178px; height: 11px;background-image: url("images/topline104473.gif"); background-position: -179px 0;}
 #ContentLeft li:hover{background-color: #006b8e;}
 .ContentLeft1{width: 178px;height: 95px;background-image: url("images/nav_bg104473.gif");}
@@ -39,7 +42,7 @@ background-color: #ff0000;
 .a1{background-position: 0 -33px;}
 .a2{background-position: 0 -63px;}
 .ContentLeft2{width: 178px;height:195px;background-image: url("images/topline104473.gif");}
-.ConLeft2Li{width: 168px;height: 22px;padding-top:2px;padding-left: 12px; }
+.ConLeft2Li{width: 166px;height: 22px;padding-top:2px;padding-left: 12px; }
 .ConLeft2Li a{color:#A3A3A3;text-decoration: none;line-height: 20px;padding-left: 12px;}
 .shoujian{font-weight: bold;}
 .shuzi{float: left;margin-top: 3px;}
@@ -48,8 +51,10 @@ background-color: #ff0000;
 .qingkong{margin-left: 20px;}
 .qita{width: 178px;height: 28px;border-bottom: 3px solid #001d26;border-top: 3px solid #001d26; background-image: url("images/topline104473.gif");  }
 .qita a{color:  rgb(53, 75, 102);text-decoration: none;line-height: 20px;padding-left: 25px;}
-.ContentLeft3{height: 235px; background-image: url("images/topline104473.gif");}
+.ContentLeft3{height: 220px; background-image: url("images/topline104473.gif");}
+.bottomline{width: 178px; height: 11px;background-image: url("images/topline104473.gif"); background-position: -179px -12px; }
 /*右边部分*/
+.topbox{width:1188px;height: 7px;background-image: url("images/nav_bg104473.gif"); background-position: 0 -108px;}
 .txt-title{margin: 4px 0 5px 8px;}
 .shoujianxiang{font-weight: bold;font-size: 14px;}
 
@@ -77,7 +82,7 @@ background-color: #ff0000;
 .gengzao{width: 1146px;height: 23px;border-bottom:2px solid #c1c8d2; padding: 8px 0 3px 9px;color: #3D5E86;margin-left: 8px; }
 .gengzao b{font-size: 14px;}
 .gengzao span{text-decoration: underline;}
-.xinArea{width: 1146px;height: 390px;margin-left: 8px;}
+.xinArea{width: 1146px;height: auto; margin-left: 8px;}
 .liA{width:32px ;height:22px;}
 .liB{width:32px ;height:22px;}
 .liC{width:147px ;height:22px;}
@@ -85,10 +90,11 @@ background-color: #ff0000;
 .liE{width:90px ;height:22px;}
 .fg{background-image:url("images/mail1d47c7.png");background-position:-32px -160px;width: 14px;height: 14px;float: right;position: relative; }
 .fg1{background-image:url("images/mail1d47c7.png");background-position:-48px -160px;width: 14px;height: 14px;float: right;position: relative;left: 14px;display: none;}
+.xinAreaLi{height: 25px;display: inline-block;}
 .xinArea li{float: left;padding: 3px 0 0 5px;cursor: pointer;border-bottom: 1px solid #ddd;}
 .xinxi{background-image: url("images/mail1d47c7.png");background-position: -48px 0; width: 18px;height: 16px;background-repeat: no-repeat;display: block;}
 .list_btline{width: 1146px;height: 26px;border-bottom:1px solid #c1c8d2; margin-left: 8px;background-color: #f2f4f6;}
-.list_btline li{padding: 5px 0 0 5px;}
-.list_btline span{color: #A8ADB8;}
-.list_btline a{color: #3D5E86;padding-left: 3px;}
+.list_btline li{padding: 5px 0 0 5px; height: 22px;}
+.list_btline span{color: #A8ADB8; display: inline-block;}
+.list_btline a{color: #3D5E86;padding-left: 3px; display: inline-block;}
 .list_btline a:hover{text-decoration: underline;}

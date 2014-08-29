@@ -35,7 +35,7 @@
 .span7{ font-size: 36px; font-weight: 700;line-height: 30px; letter-spacing: 1px;}
 /*content2*/
 #content2{ height: 360px; }
-.contentInner{ padding: 0 15px;  height: 329px;  float: left; }
+.contentInner{ padding: 0 15px;  height: 329px;width: 360px;  float: left;}
 .contentInnerTop{width: 360px; height: 96px; }
 .contentInnerCenter{width: 360px; height:100px; margin-bottom: 20px; border-radius: 1px; overflow: hidden; background-color: #eedbb9;  }
 .contentInnerBottom{width: 360px; height: 100px; }
@@ -44,9 +44,55 @@
 
 /*content3*/
 #content3{ height: 914px;}
-.content3title{height: 96px;}  
-.contenttitleT{ height: 66px;}
+.content3title{width: 1140px; height: 96px; margin-left:10px; } 
+.contenttitleT{width: 360px; height: 66px; float: left;}
+.content3Inner{width: 1170px; height: 800px;}
+.content3Inner ul{display:inline-block;  }
+.content3Inner li{display: block; width:555px; height: 259px;  padding: 0 15px; }
+.content3Left{float: left; }
+.content3Right{float: right;}
+.iconLogo{width: 40px; height: 60px;border-right: 1px solid #eee; float: left;}
+.content3Inner li span{display: block;height: 40px; width: 40px;background-image: url("images/icon.png"); border-bottom: 1px solid #eee;}
+.icon1{background-position: -20px -24px; }
+.icon2{ background-position: -20px -93px;}
+.icon3{ background-position: -20px -154px;}
+.icon4{ background-position: -20px -215px;}
+.icon5{ background-position: -20px -284px;}
+.icon6{ background-position: -20px -348px;}
+
+.iconContent{width: 445px; height: 149px;padding: 30px; border-top: 1px solid #eee;border-bottom: 1px solid #eee;float: left; }
+.iconContent h2{display: block;width: 445px; font-size: 16px; font-weight: 700;line-height: 24px;margin-bottom: -5px; border: 0px;}
+.iconContent p{font-size: 14px; }
+.iconmore{width: 445px; height: 50px;border-right: 1px solid #eee;padding: 0 30px 0 0;}
+.iconmore a{ font-size: 10px;color: #A1AEB9;}
 
 /*content4*/
-#content4{ height: 1240px;background-color: blue;}
+#content4{ height: 800px;}
+.content4Inner{ width: 1170px; height:1140px;}
+.content4Inner ul{display: inline-block; }
+.content4Inner li{display: block;width:260px; height: 330px; padding: 0 30px 30px 0; float: left;position: relative;   }
+.content4Inner li a{ display: block;width: 260px; height: 330px;overflow: hidden; z-index: 1111;background-color: #9ED154; }
+.content4Inner li img{display: block;min-height: 100%; opacity: 1;margin-top: -20px;transition-duration: 0.5s;-moz-transition-duration:0.5s; /* Firefox 4 */-webkit-transition-duration: 0.5s; /* Safari 和 Chrome */-o-transition-duration: 0.5s;}
+.hover{ width:130px; height: 150px;padding:50px 65px 0 65px;  position: absolute; top: 0px; left: 0px;}
+.hover h2{color: #fff;font-weight: 300; display:block; text-align: center; border: 0px; width: 130px; height: 20px; float: left;transition-duration: 0.38s;-moz-transition-duration: 0.38s; /* Firefox 4 */-webkit-transition-duration: 0.38s; /* Safari 和 Chrome */-o-transition-duration: 0.38s;}
+.hover span{font-weight: 800;}
+.hover p{position: absolute; top: 150px; left: 65px; color: #fff; text-align: center;display:block; font-size: 13px; width: 120px; height: 70px; opacity: 0;transition-duration: 0.38s;-moz-transition-duration: 0.38s; /* Firefox 4 */-webkit-transition-duration: 0.38s; /* Safari 和 Chrome */-o-transition-duration: 0.38s;float: left;}
+.hovertop{-webkit-transform: scale(0,1); transform-origin: 0 0;opacity:0; position: absolute; top: 40px; left: 20px;  width: 220px; height: 250px; border-top: 1px solid #fff;  border-bottom: 1px solid #fff; transition-duration: 0.38s;-moz-transition-duration: 0.38s; /* Firefox 4 */-webkit-transition-duration: 0.38s; /* Safari 和 Chrome */-o-transition-duration: 0.38s;}
+.hoverleft{opacity: 0; position: absolute; top: 20px; left: 40px; width:180px; height: 290px; border-left: 1px solid #fff;border-right: 1px solid #fff;transition-duration: 0.38s;-moz-transition-duration: 0.38s; /* Firefox 4 */-webkit-transition-duration: 0.38s; /* Safari 和 Chrome */-o-transition-duration: 0.38s;  }
+/*content5*/
+#content5{ height: 215px;}
+.content5Inner{width: 1140px; height: 100px; padding: 0 15px; overflow: hidden;}
+.content5Inner ul{display:inline-block; height: 100px; width: 1710px; }
+.content5Inner li{display: inline-block; float: left;}
+.btn{margin-top: 30px; width: 47px; height: 22px; float: right; background-color: #eeeeed; border-radius: 30px; }
+.btn a{display: block;width: 20px; height: 20px;background-color: #fff; border: 1px solid #ccc; border-radius: 100%;text-align: center; }
+.btn a i{display: block; line-height: 20px;  }
+.next{float: right;}
+.prev{float: left; margin-right: 3px; }
+
+
+
+
+
+
 #footer{width: 1215px; height: 109px; padding: 25px 0 ;background-color: #e7e7e7; }
