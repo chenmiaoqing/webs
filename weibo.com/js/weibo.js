@@ -524,10 +524,10 @@ function tijiaoson(tt){
 		replysonContentHtml +='								<em class="hover"><a>举报</a><span>|</span></em>';
 		replysonContentHtml +='								<a><i></i></a>';
 		replysonContentHtml +='								<span>|</span>';
-		replysonContentHtml +='								<a class="huifu" isshow="no" talkSonid="son1">回复</a>';
+		replysonContentHtml +='								<a class="huifu" isshow="no" talkSonid="son3">回复</a>';
 		replysonContentHtml +='							</span>';
 		replysonContentHtml +='						 </div>  ';
-		replysonContentHtml +='						 <div class="replySonContent" id="replySonContentson1">'
+		replysonContentHtml +='						 <div class="replySonContent" id="replySonContentson3">'
 		replysonContentHtml +='						</div>'
 		replysonContentHtml +='					</dd>';
 		replysonContentHtml +='				</dl>';
